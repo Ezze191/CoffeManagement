@@ -479,6 +479,7 @@
             this.button2.TabIndex = 40;
             this.button2.Text = "Pagar";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Eleccion_de_consumo
             // 

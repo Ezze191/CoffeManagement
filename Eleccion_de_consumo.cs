@@ -36,5 +36,10 @@ namespace Proyecto_POO
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
