@@ -29,6 +29,11 @@ namespace Proyecto_POO
 
         private void bt_registrarCliente_Click(object sender, EventArgs e)
         {
+            string nombre = tb_nombre.Text;
+            string apellido = tb_apellido.Text; 
+
+
+
             MessageBox.Show("El cliente se ah registrado Correctamente");
             Eleccion_de_consumo eleccion = new Eleccion_de_consumo();
            eleccion.Show();

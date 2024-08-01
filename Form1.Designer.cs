@@ -35,6 +35,8 @@
             this.BT_INVITADO = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.PB_LOGO = new System.Windows.Forms.PictureBox();
+            this.lb_conexion = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PB_LOGO)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,11 +116,33 @@
             this.PB_LOGO.TabIndex = 6;
             this.PB_LOGO.TabStop = false;
             // 
+            // lb_conexion
+            // 
+            this.lb_conexion.AutoSize = true;
+            this.lb_conexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_conexion.Location = new System.Drawing.Point(155, 897);
+            this.lb_conexion.Name = "lb_conexion";
+            this.lb_conexion.Size = new System.Drawing.Size(159, 32);
+            this.lb_conexion.TabIndex = 7;
+            this.lb_conexion.Text = "CONNECT";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1, 897);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(148, 32);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "STATUS :";
+            // 
             // F_HOME
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1902, 1033);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lb_conexion);
             this.Controls.Add(this.PB_LOGO);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BT_INVITADO);
@@ -147,6 +171,8 @@
         private System.Windows.Forms.Button BT_INVITADO;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox PB_LOGO;
+        private System.Windows.Forms.Label lb_conexion;
+        private System.Windows.Forms.Label label1;
     }
 }
 

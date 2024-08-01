@@ -32,7 +32,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tb_nombre = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_apellido = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.bt_registrarCliente = new System.Windows.Forms.Button();
@@ -71,14 +71,14 @@
             this.tb_nombre.Size = new System.Drawing.Size(411, 38);
             this.tb_nombre.TabIndex = 2;
             // 
-            // textBox1
+            // tb_apellido
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(734, 771);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(411, 38);
-            this.textBox1.TabIndex = 3;
+            this.tb_apellido.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tb_apellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_apellido.Location = new System.Drawing.Point(734, 771);
+            this.tb_apellido.Name = "tb_apellido";
+            this.tb_apellido.Size = new System.Drawing.Size(411, 38);
+            this.tb_apellido.TabIndex = 3;
             // 
             // label2
             // 
@@ -137,7 +137,7 @@
             this.Controls.Add(this.bt_registrarCliente);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb_apellido);
             this.Controls.Add(this.tb_nombre);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -159,7 +159,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tb_nombre;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_apellido;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button bt_registrarCliente;

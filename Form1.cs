@@ -20,6 +20,15 @@ namespace Proyecto_POO
         private void F_HOME_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+            try {
+                Conexion_BaseDatos conectar = new Conexion_BaseDatos();
+                conectar.EstablecerConexion();
+                lb_conexion.ForeColor = Color.Green;
+            }
+            catch{
+                MessageBox.Show("No se pudo conectar a la base de datos");
+            }
+            
         }
 
         private void BT_BUSCAR_USUARIO_Click(object sender, EventArgs e)
