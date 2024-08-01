@@ -68,6 +68,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.bt_regresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.B_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.B_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.B_2)).BeginInit();
@@ -481,11 +482,24 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // bt_regresar
+            // 
+            this.bt_regresar.BackColor = System.Drawing.Color.Red;
+            this.bt_regresar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_regresar.BackgroundImage")));
+            this.bt_regresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bt_regresar.Location = new System.Drawing.Point(28, 13);
+            this.bt_regresar.Name = "bt_regresar";
+            this.bt_regresar.Size = new System.Drawing.Size(122, 93);
+            this.bt_regresar.TabIndex = 41;
+            this.bt_regresar.UseVisualStyleBackColor = false;
+            this.bt_regresar.Click += new System.EventHandler(this.bt_regresar_Click);
+            // 
             // Eleccion_de_consumo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2011, 1033);
+            this.ClientSize = new System.Drawing.Size(1924, 1033);
+            this.Controls.Add(this.bt_regresar);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label15);
@@ -599,5 +613,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button bt_regresar;
     }
 }

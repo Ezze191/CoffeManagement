@@ -24,7 +24,28 @@ namespace Proyecto_POO
 
         private void BT_BUSCAR_USUARIO_Click(object sender, EventArgs e)
         {
+            F_BuscarUsuario V_BuscarUsuario = new F_BuscarUsuario();
+            V_BuscarUsuario.Show();
+            this.Hide();
+        }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BT_INVITADO_Click(object sender, EventArgs e)
+        {
+            Eleccion_de_consumo eleccion = new Eleccion_de_consumo();   
+            eleccion.Show();    
+            this.Hide();    
+        }
+
+        private void BT_REGISTRAR_Click(object sender, EventArgs e)
+        {
+            F_RegistarCliente registrar = new F_RegistarCliente();
+            registrar.Show();
+            this.Hide();
         }
     }
 }

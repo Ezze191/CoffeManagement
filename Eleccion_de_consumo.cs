@@ -41,5 +41,13 @@ namespace Proyecto_POO
         {
 
         }
+
+        private void bt_regresar_Click(object sender, EventArgs e)
+        {
+            F_HOME home = new F_HOME(); 
+            home.Show();
+            this.Hide();   
+
+        }
     }
 }

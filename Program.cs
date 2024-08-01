@@ -16,7 +16,7 @@ namespace Proyecto_POO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Eleccion_de_consumo());
+            Application.Run(new F_HOME());
         }
     }
 }

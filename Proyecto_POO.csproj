@@ -58,6 +58,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_BuscarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_BuscarUsuario.Designer.cs">
+      <DependentUpon>F_BuscarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_RegistarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_RegistarCliente.Designer.cs">
+      <DependentUpon>F_RegistarCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Eleccion_de_consumo.resx">
@@ -65,6 +77,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_BuscarUsuario.resx">
+      <DependentUpon>F_BuscarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_RegistarCliente.resx">
+      <DependentUpon>F_RegistarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
