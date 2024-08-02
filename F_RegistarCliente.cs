@@ -31,25 +31,48 @@ namespace Proyecto_POO
 
         private void bt_registrarCliente_Click(object sender, EventArgs e)
         {
-            Conexion_BaseDatos conectarBD = new Conexion_BaseDatos();
-            conectarBD.EstablecerConexion();
-
+            
+            //datos requeridos para ingresar al sistema
             string nombre = tb_nombre.Text;
             string apellido = tb_apellido.Text;
             double cashback = 0;
             int vecesvisitadas = 0;
 
+            //checa si los texbox estan vacios por que es obligatorio ingresar informacion
             if(nombre == string.Empty || apellido == string.Empty)
             {
                 MessageBox.Show("TIENES QUE LLENAR LOS DATOS REQUERIDOS");
             }
+            
             else
             {
-                ingresardatos();
-            }
+                //checa en la base de datos si el nombre y el apellido ya existen
+                Conexion_BaseDatos conectarBD = new Conexion_BaseDatos();
+                conectarBD.EstablecerConexion();
+                string comparacion = "select * from cliente where nombre = " + "'" + nombre + "'" + " and apellido =" + "'" + apellido + "'" + ";";
+                MySqlCommand ccomparcion = new MySqlCommand(comparacion, conectarBD.conexion);
+                ccomparcion.CommandTimeout = 60;
+                MySqlDataReader readercompa;
+                readercompa = ccomparcion.ExecuteReader();
+                if (readercompa.Read())
+                {
+                    MessageBox.Show("LOS DATOS YA EXISTEN");
+                    readercompa.Close();
+                    
+                }
+                else
+                {
+                    ingresardatos();
+                }
 
-            void ingresardatos() { 
-            string consulta = "insert into cliente values (" + "'" + nombre + "'" + "," + "'" + apellido + "'" + "," + cashback + "," + vecesvisitadas + ")" + ";";
+                
+            }
+            //metodo para ingrear los datos a la base de datos 
+            void ingresardatos() {
+
+             Conexion_BaseDatos conectarBD = new Conexion_BaseDatos();
+             conectarBD.EstablecerConexion();
+                string consulta = "insert into cliente values (" + "'" + nombre + "'" + "," + "'" + apellido + "'" + "," + cashback + "," + vecesvisitadas + ")" + ";";
             MySqlCommand comando = new MySqlCommand(consulta,conectarBD.conexion);
             comando.CommandTimeout = 60;
             MySqlDataReader reader;
@@ -58,10 +81,12 @@ namespace Proyecto_POO
                 reader = comando.ExecuteReader();
                 reader.Close();
                 MessageBox.Show("CLIENTE REGISTRADO CORRECTAMENTE");
+                
                 Eleccion_de_consumo eleccion = new Eleccion_de_consumo();
                 eleccion.Show();
                 this.Close();
-            }
+                
+                }
             catch (Exception)
             {
                 MessageBox.Show("AH OCURRIDO UN ERROR AL REGISTRAR AL CLIENTE");
