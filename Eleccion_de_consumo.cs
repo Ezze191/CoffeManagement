@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using Mysqlx;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,7 +26,7 @@ namespace Proyecto_POO
 
         private void Eleccion_de_consumo_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void label5_Click(object sender, EventArgs e)
