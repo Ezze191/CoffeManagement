@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 namespace Proyecto_POO
 {
@@ -19,10 +21,23 @@ namespace Proyecto_POO
 
         public MySqlConnection EstablecerConexion()
         {
+            try { 
             conexion.ConnectionString = CodigoConexion;
             conexion.Open();    
             return conexion;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("PROBLEMA EN LA BASE DE DATOS " + ex.Message);
+                return conexion;
 
+            }
         }
+        public MySqlConnection CerrarConexion()
+        {
+            conexion.Close();
+            return conexion;
+        }
+
     }
 }

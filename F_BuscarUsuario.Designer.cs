@@ -69,7 +69,7 @@
             this.L_Nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.L_Nombre.Location = new System.Drawing.Point(837, 484);
             this.L_Nombre.Name = "L_Nombre";
-            this.L_Nombre.Size = new System.Drawing.Size(184, 52);
+            this.L_Nombre.Size = new System.Drawing.Size(181, 51);
             this.L_Nombre.TabIndex = 2;
             this.L_Nombre.Text = "Nombre";
             // 
@@ -80,7 +80,7 @@
             this.F_Apellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.F_Apellido.Location = new System.Drawing.Point(837, 674);
             this.F_Apellido.Name = "F_Apellido";
-            this.F_Apellido.Size = new System.Drawing.Size(185, 52);
+            this.F_Apellido.Size = new System.Drawing.Size(185, 51);
             this.F_Apellido.TabIndex = 3;
             this.F_Apellido.Text = "Apellido";
             // 
@@ -149,6 +149,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BuscarUsuario";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.F_BuscarUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PB_USUARIO)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

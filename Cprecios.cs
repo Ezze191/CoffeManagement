@@ -45,6 +45,7 @@ namespace Proyecto_POO
                     }
                 }
             }
+            ConexionBDeleccion.CerrarConexion();
         }
 
 

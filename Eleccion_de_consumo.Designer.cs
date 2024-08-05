@@ -52,7 +52,7 @@
             this.precio5 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lbnombrecompleto = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
@@ -63,6 +63,20 @@
             this.lb_veces = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.btmas0 = new System.Windows.Forms.Button();
+            this.btmenos0 = new System.Windows.Forms.Button();
+            this.btmenos1 = new System.Windows.Forms.Button();
+            this.btmas1 = new System.Windows.Forms.Button();
+            this.btmenos2 = new System.Windows.Forms.Button();
+            this.btmas2 = new System.Windows.Forms.Button();
+            this.btmenos5 = new System.Windows.Forms.Button();
+            this.btmas5 = new System.Windows.Forms.Button();
+            this.btmenos4 = new System.Windows.Forms.Button();
+            this.btmas4 = new System.Windows.Forms.Button();
+            this.btmenos3 = new System.Windows.Forms.Button();
+            this.btmas3 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lb_cashback = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.B_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.B_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.B_3)).BeginInit();
@@ -311,15 +325,15 @@
             this.label12.TabIndex = 31;
             this.label12.Text = "CLIENTE";
             // 
-            // label13
+            // lbnombrecompleto
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(1763, 71);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(115, 25);
-            this.label13.TabIndex = 32;
-            this.label13.Text = "INVITADO";
+            this.lbnombrecompleto.AutoSize = true;
+            this.lbnombrecompleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnombrecompleto.Location = new System.Drawing.Point(1763, 71);
+            this.lbnombrecompleto.Name = "lbnombrecompleto";
+            this.lbnombrecompleto.Size = new System.Drawing.Size(115, 25);
+            this.lbnombrecompleto.TabIndex = 32;
+            this.lbnombrecompleto.Text = "INVITADO";
             // 
             // label16
             // 
@@ -409,7 +423,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(1616, 410);
+            this.label17.Location = new System.Drawing.Point(1616, 454);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(173, 25);
             this.label17.TabIndex = 43;
@@ -425,11 +439,196 @@
             this.label18.TabIndex = 44;
             this.label18.Text = "Latte Frio";
             // 
+            // btmas0
+            // 
+            this.btmas0.BackColor = System.Drawing.Color.Lime;
+            this.btmas0.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmas0.ForeColor = System.Drawing.Color.Black;
+            this.btmas0.Location = new System.Drawing.Point(366, 406);
+            this.btmas0.Name = "btmas0";
+            this.btmas0.Size = new System.Drawing.Size(72, 56);
+            this.btmas0.TabIndex = 45;
+            this.btmas0.Text = "+";
+            this.btmas0.UseVisualStyleBackColor = false;
+            // 
+            // btmenos0
+            // 
+            this.btmenos0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btmenos0.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmenos0.ForeColor = System.Drawing.Color.Black;
+            this.btmenos0.Location = new System.Drawing.Point(483, 406);
+            this.btmenos0.Name = "btmenos0";
+            this.btmenos0.Size = new System.Drawing.Size(72, 56);
+            this.btmenos0.TabIndex = 46;
+            this.btmenos0.Text = "-";
+            this.btmenos0.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btmenos0.UseVisualStyleBackColor = false;
+            // 
+            // btmenos1
+            // 
+            this.btmenos1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btmenos1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmenos1.ForeColor = System.Drawing.Color.Black;
+            this.btmenos1.Location = new System.Drawing.Point(844, 406);
+            this.btmenos1.Name = "btmenos1";
+            this.btmenos1.Size = new System.Drawing.Size(72, 56);
+            this.btmenos1.TabIndex = 48;
+            this.btmenos1.Text = "-";
+            this.btmenos1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btmenos1.UseVisualStyleBackColor = false;
+            // 
+            // btmas1
+            // 
+            this.btmas1.BackColor = System.Drawing.Color.Lime;
+            this.btmas1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmas1.ForeColor = System.Drawing.Color.Black;
+            this.btmas1.Location = new System.Drawing.Point(727, 406);
+            this.btmas1.Name = "btmas1";
+            this.btmas1.Size = new System.Drawing.Size(72, 56);
+            this.btmas1.TabIndex = 47;
+            this.btmas1.Text = "+";
+            this.btmas1.UseVisualStyleBackColor = false;
+            // 
+            // btmenos2
+            // 
+            this.btmenos2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btmenos2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmenos2.ForeColor = System.Drawing.Color.Black;
+            this.btmenos2.Location = new System.Drawing.Point(1217, 406);
+            this.btmenos2.Name = "btmenos2";
+            this.btmenos2.Size = new System.Drawing.Size(72, 56);
+            this.btmenos2.TabIndex = 50;
+            this.btmenos2.Text = "-";
+            this.btmenos2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btmenos2.UseVisualStyleBackColor = false;
+            // 
+            // btmas2
+            // 
+            this.btmas2.BackColor = System.Drawing.Color.Lime;
+            this.btmas2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmas2.ForeColor = System.Drawing.Color.Black;
+            this.btmas2.Location = new System.Drawing.Point(1100, 406);
+            this.btmas2.Name = "btmas2";
+            this.btmas2.Size = new System.Drawing.Size(72, 56);
+            this.btmas2.TabIndex = 49;
+            this.btmas2.Text = "+";
+            this.btmas2.UseVisualStyleBackColor = false;
+            // 
+            // btmenos5
+            // 
+            this.btmenos5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btmenos5.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmenos5.ForeColor = System.Drawing.Color.Black;
+            this.btmenos5.Location = new System.Drawing.Point(1217, 843);
+            this.btmenos5.Name = "btmenos5";
+            this.btmenos5.Size = new System.Drawing.Size(72, 56);
+            this.btmenos5.TabIndex = 56;
+            this.btmenos5.Text = "-";
+            this.btmenos5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btmenos5.UseVisualStyleBackColor = false;
+            // 
+            // btmas5
+            // 
+            this.btmas5.BackColor = System.Drawing.Color.Lime;
+            this.btmas5.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmas5.ForeColor = System.Drawing.Color.Black;
+            this.btmas5.Location = new System.Drawing.Point(1100, 843);
+            this.btmas5.Name = "btmas5";
+            this.btmas5.Size = new System.Drawing.Size(72, 56);
+            this.btmas5.TabIndex = 55;
+            this.btmas5.Text = "+";
+            this.btmas5.UseVisualStyleBackColor = false;
+            // 
+            // btmenos4
+            // 
+            this.btmenos4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btmenos4.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmenos4.ForeColor = System.Drawing.Color.Black;
+            this.btmenos4.Location = new System.Drawing.Point(844, 843);
+            this.btmenos4.Name = "btmenos4";
+            this.btmenos4.Size = new System.Drawing.Size(72, 56);
+            this.btmenos4.TabIndex = 54;
+            this.btmenos4.Text = "-";
+            this.btmenos4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btmenos4.UseVisualStyleBackColor = false;
+            // 
+            // btmas4
+            // 
+            this.btmas4.BackColor = System.Drawing.Color.Lime;
+            this.btmas4.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmas4.ForeColor = System.Drawing.Color.Black;
+            this.btmas4.Location = new System.Drawing.Point(727, 843);
+            this.btmas4.Name = "btmas4";
+            this.btmas4.Size = new System.Drawing.Size(72, 56);
+            this.btmas4.TabIndex = 53;
+            this.btmas4.Text = "+";
+            this.btmas4.UseVisualStyleBackColor = false;
+            // 
+            // btmenos3
+            // 
+            this.btmenos3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btmenos3.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmenos3.ForeColor = System.Drawing.Color.Black;
+            this.btmenos3.Location = new System.Drawing.Point(483, 843);
+            this.btmenos3.Name = "btmenos3";
+            this.btmenos3.Size = new System.Drawing.Size(72, 56);
+            this.btmenos3.TabIndex = 52;
+            this.btmenos3.Text = "-";
+            this.btmenos3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btmenos3.UseVisualStyleBackColor = false;
+            // 
+            // btmas3
+            // 
+            this.btmas3.BackColor = System.Drawing.Color.Lime;
+            this.btmas3.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmas3.ForeColor = System.Drawing.Color.Black;
+            this.btmas3.Location = new System.Drawing.Point(366, 843);
+            this.btmas3.Name = "btmas3";
+            this.btmas3.Size = new System.Drawing.Size(72, 56);
+            this.btmas3.TabIndex = 51;
+            this.btmas3.Text = "+";
+            this.btmas3.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(1616, 406);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(134, 25);
+            this.label2.TabIndex = 57;
+            this.label2.Text = "Cashback = ";
+            // 
+            // lb_cashback
+            // 
+            this.lb_cashback.AutoSize = true;
+            this.lb_cashback.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_cashback.ForeColor = System.Drawing.Color.ForestGreen;
+            this.lb_cashback.Location = new System.Drawing.Point(1765, 406);
+            this.lb_cashback.Name = "lb_cashback";
+            this.lb_cashback.Size = new System.Drawing.Size(66, 25);
+            this.lb_cashback.TabIndex = 58;
+            this.lb_cashback.Text = "00.00";
+            // 
             // Eleccion_de_consumo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1033);
+            this.Controls.Add(this.lb_cashback);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btmenos5);
+            this.Controls.Add(this.btmas5);
+            this.Controls.Add(this.btmenos4);
+            this.Controls.Add(this.btmas4);
+            this.Controls.Add(this.btmenos3);
+            this.Controls.Add(this.btmas3);
+            this.Controls.Add(this.btmenos2);
+            this.Controls.Add(this.btmas2);
+            this.Controls.Add(this.btmenos1);
+            this.Controls.Add(this.btmas1);
+            this.Controls.Add(this.btmenos0);
+            this.Controls.Add(this.btmas0);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.lb_veces);
@@ -440,7 +639,7 @@
             this.Controls.Add(this.label14);
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.label13);
+            this.Controls.Add(this.lbnombrecompleto);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.precio5);
             this.Controls.Add(this.pictureBox11);
@@ -515,7 +714,7 @@
         private System.Windows.Forms.Label precio5;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lbnombrecompleto;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox pictureBox12;
@@ -526,5 +725,19 @@
         private System.Windows.Forms.Label lb_veces;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button btmas0;
+        private System.Windows.Forms.Button btmenos0;
+        private System.Windows.Forms.Button btmenos1;
+        private System.Windows.Forms.Button btmas1;
+        private System.Windows.Forms.Button btmenos2;
+        private System.Windows.Forms.Button btmas2;
+        private System.Windows.Forms.Button btmenos5;
+        private System.Windows.Forms.Button btmas5;
+        private System.Windows.Forms.Button btmenos4;
+        private System.Windows.Forms.Button btmas4;
+        private System.Windows.Forms.Button btmenos3;
+        private System.Windows.Forms.Button btmas3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lb_cashback;
     }
 }

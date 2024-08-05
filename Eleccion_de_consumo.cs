@@ -5,7 +5,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,9 +16,16 @@ namespace Proyecto_POO
 {
     public partial class Eleccion_de_consumo : Form
     {
+        public string datanombre { get; set; }
+        public string dataapellido { get; set; }    
+        public int dataVecesVicitadas { get; set; } 
+
+        public double dataCashBack { get; set; }
+
         public Eleccion_de_consumo()
         {
             InitializeComponent();
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -24,8 +33,25 @@ namespace Proyecto_POO
 
         }
 
-        private void Eleccion_de_consumo_Load(object sender, EventArgs e)
+        public void Eleccion_de_consumo_Load(object sender, EventArgs e)
         {
+            string name = datanombre;
+            string lastname = dataapellido;
+            int Veces = dataVecesVicitadas;
+            double CB = dataCashBack;
+
+            if (datanombre != null || dataapellido != null) {
+                
+                lbnombrecompleto.Text = name + " " + lastname;
+                lb_veces.Text = Veces.ToString();
+                lb_cashback.Text = CB.ToString();
+            }
+                
+            
+
+
+            
+
             //busca los precios y los actualiza depende a la base de datos
             Cprecios precios = new Cprecios();
             precios.establecer_precios();
@@ -39,7 +65,7 @@ namespace Proyecto_POO
 
         private void label5_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -56,7 +82,7 @@ namespace Proyecto_POO
         {
             F_HOME home = new F_HOME(); 
             home.Show();
-            this.Close();   
+            this.Hide();   
 
         }
     }

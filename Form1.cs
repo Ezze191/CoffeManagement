@@ -24,6 +24,7 @@ namespace Proyecto_POO
                 Conexion_BaseDatos conectar = new Conexion_BaseDatos();
                 conectar.EstablecerConexion();
                 lb_conexion.ForeColor = Color.Green;
+                conectar.CerrarConexion();
             }
             catch{
                 MessageBox.Show("No se pudo conectar a la base de datos");
@@ -33,6 +34,7 @@ namespace Proyecto_POO
 
         private void BT_BUSCAR_USUARIO_Click(object sender, EventArgs e)
         {
+
             F_BuscarUsuario V_BuscarUsuario = new F_BuscarUsuario();
             V_BuscarUsuario.Show();
             this.Hide();

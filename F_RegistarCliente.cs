@@ -62,6 +62,7 @@ namespace Proyecto_POO
                 }
                 else
                 {
+                    conectarBD.CerrarConexion();
                     ingresardatos();
                 }
 
@@ -81,10 +82,12 @@ namespace Proyecto_POO
                 reader = comando.ExecuteReader();
                 reader.Close();
                 MessageBox.Show("CLIENTE REGISTRADO CORRECTAMENTE");
-                
+                conectarBD.CerrarConexion();
                 Eleccion_de_consumo eleccion = new Eleccion_de_consumo();
+                eleccion.datanombre = nombre;
+                eleccion.dataapellido = apellido;
                 eleccion.Show();
-                this.Close();
+                this.Hide();
                 
                 }
             catch (Exception)
