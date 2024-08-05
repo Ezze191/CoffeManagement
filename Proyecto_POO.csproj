@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion_BaseDatos.cs" />
+    <Compile Include="Cprecios.cs" />
     <Compile Include="Eleccion_de_consumo.cs">
       <SubType>Form</SubType>
     </Compile>

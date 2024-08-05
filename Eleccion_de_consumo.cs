@@ -26,24 +26,15 @@ namespace Proyecto_POO
 
         private void Eleccion_de_consumo_Load(object sender, EventArgs e)
         {
-            Conexion_BaseDatos ConexionBDeleccion = new Conexion_BaseDatos();
-            double preciooo = 0;
+            //busca los precios y los actualiza depende a la base de datos
+            Cprecios precios = new Cprecios();
+            precios.establecer_precios();
 
-            ConexionBDeleccion.EstablecerConexion();
-            string consulta = "SELECT precio FROM bebidas WHERE nombre = 'cafe americano';";
-            MySqlCommand comaCafeAmericano = new MySqlCommand(consulta, ConexionBDeleccion.conexion);
-            comaCafeAmericano.CommandTimeout = 60;
-            MySqlDataReader reader;
-            reader = comaCafeAmericano.ExecuteReader();
-            if (reader.Read())
-            {
-                preciooo = reader.GetDouble(0);
-                precio1.Text = preciooo.ToString();
-
-            }
-            reader.Close();
-
-
+            double p_cafe_americano = precios.p_cafe_amerciano;
+            double p_capuccino = precios.p_capuccino;
+            double p_latte_frio;
+            precio0.Text = p_cafe_americano.ToString();
+            precio1.Text = p_capuccino.ToString();
         }
 
         private void label5_Click(object sender, EventArgs e)
