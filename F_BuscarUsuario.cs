@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,9 +27,46 @@ namespace Proyecto_POO
 
         private void bt_BuscarUsuario_Click(object sender, EventArgs e)
         {
-            Eleccion_de_consumo veleccion = new Eleccion_de_consumo();
-            veleccion.Show();
-            this.Hide();
+            string nombre = tb_nombre.Text;
+            string apellido = tb_apellido.Text;
+
+            if(nombre == string.Empty || apellido == string.Empty)
+            {
+                MessageBox.Show("TIENES QUE LLENAR LOS DATOS SOLICIDATOS");
+            }
+            else
+            {
+                buscarcliente();
+            }
+
+            void buscarcliente()
+            {
+                
+                //checa en la base de datos si el nombre y el apellido estan registrados y entrar a la siguiente opcion
+                Conexion_BaseDatos conectarBDbuscar = new Conexion_BaseDatos();
+                conectarBDbuscar.EstablecerConexion();
+                string comparacion = "select * from cliente where nombre = " + "'" + nombre + "'" + " and apellido =" + "'" + apellido + "'" + ";";
+                MySqlCommand ccomparcion = new MySqlCommand(comparacion, conectarBDbuscar.conexion);
+                ccomparcion.CommandTimeout = 60;
+                MySqlDataReader readerbuscar;
+                readerbuscar = ccomparcion.ExecuteReader();
+                if (readerbuscar.Read())
+                {
+                    readerbuscar.Close();
+                    Eleccion_de_consumo eleccion = new Eleccion_de_consumo();
+                    eleccion.Show();
+                    this.Close();
+                   
+
+                }
+                else
+                {
+                    MessageBox.Show("EL USUSARIO NO EXISTE, POR FAVOR DE REGISTRARLO");
+                   
+                }
+            }
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)

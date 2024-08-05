@@ -26,7 +26,24 @@ namespace Proyecto_POO
 
         private void Eleccion_de_consumo_Load(object sender, EventArgs e)
         {
-           
+            Conexion_BaseDatos ConexionBDeleccion = new Conexion_BaseDatos();
+            double preciooo = 0;
+
+            ConexionBDeleccion.EstablecerConexion();
+            string consulta = "SELECT precio FROM bebidas WHERE nombre = 'cafe americano';";
+            MySqlCommand comaCafeAmericano = new MySqlCommand(consulta, ConexionBDeleccion.conexion);
+            comaCafeAmericano.CommandTimeout = 60;
+            MySqlDataReader reader;
+            reader = comaCafeAmericano.ExecuteReader();
+            if (reader.Read())
+            {
+                preciooo = reader.GetDouble(0);
+                precio1.Text = preciooo.ToString();
+
+            }
+            reader.Close();
+
+
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -48,7 +65,7 @@ namespace Proyecto_POO
         {
             F_HOME home = new F_HOME(); 
             home.Show();
-            this.Hide();   
+            this.Close();   
 
         }
     }
