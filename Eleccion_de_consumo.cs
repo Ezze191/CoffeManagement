@@ -32,7 +32,7 @@ namespace Proyecto_POO
 
             double p_cafe_americano = precios.p_cafe_amerciano;
             double p_capuccino = precios.p_capuccino;
-            double p_latte_frio;
+            
             precio0.Text = p_cafe_americano.ToString();
             precio1.Text = p_capuccino.ToString();
         }
