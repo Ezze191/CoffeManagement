@@ -77,6 +77,7 @@
             this.btmas3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.lb_cashback = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.B_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.B_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.B_3)).BeginInit();
@@ -610,11 +611,21 @@
             this.lb_cashback.TabIndex = 58;
             this.lb_cashback.Text = "00.00";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(433, 424);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 16);
+            this.label3.TabIndex = 59;
+            this.label3.Text = "label3";
+            // 
             // Eleccion_de_consumo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1033);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.lb_cashback);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btmenos5);
@@ -739,5 +750,6 @@
         private System.Windows.Forms.Button btmas3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lb_cashback;
+        private System.Windows.Forms.Label label3;
     }
 }
