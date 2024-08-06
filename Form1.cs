@@ -37,6 +37,7 @@ namespace Proyecto_POO
 
             F_BuscarUsuario V_BuscarUsuario = new F_BuscarUsuario();
             V_BuscarUsuario.Show();
+            
             this.Hide();
         }
 

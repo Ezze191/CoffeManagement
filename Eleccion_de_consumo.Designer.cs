@@ -132,25 +132,31 @@
             // 
             // B_7
             // 
+            this.B_7.Image = ((System.Drawing.Image)(resources.GetObject("B_7.Image")));
             this.B_7.Location = new System.Drawing.Point(366, 570);
             this.B_7.Name = "B_7";
             this.B_7.Size = new System.Drawing.Size(236, 194);
+            this.B_7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.B_7.TabIndex = 6;
             this.B_7.TabStop = false;
             // 
             // B_8
             // 
+            this.B_8.Image = ((System.Drawing.Image)(resources.GetObject("B_8.Image")));
             this.B_8.Location = new System.Drawing.Point(727, 570);
             this.B_8.Name = "B_8";
             this.B_8.Size = new System.Drawing.Size(236, 194);
+            this.B_8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.B_8.TabIndex = 7;
             this.B_8.TabStop = false;
             // 
             // B_9
             // 
+            this.B_9.Image = ((System.Drawing.Image)(resources.GetObject("B_9.Image")));
             this.B_9.Location = new System.Drawing.Point(1100, 570);
             this.B_9.Name = "B_9";
             this.B_9.Size = new System.Drawing.Size(236, 194);
+            this.B_9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.B_9.TabIndex = 8;
             this.B_9.TabStop = false;
             // 
