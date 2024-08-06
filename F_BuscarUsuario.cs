@@ -114,5 +114,10 @@ namespace Proyecto_POO
         {
 
         }
+
+        private void L_Nombre_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

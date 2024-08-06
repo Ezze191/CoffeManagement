@@ -44,6 +44,7 @@
             // 
             this.label.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label.AutoSize = true;
+            this.label.BackColor = System.Drawing.Color.Transparent;
             this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label.Location = new System.Drawing.Point(672, 363);
             this.label.Name = "label";
@@ -55,7 +56,7 @@
             // BT_BUSCAR_USUARIO
             // 
             this.BT_BUSCAR_USUARIO.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BT_BUSCAR_USUARIO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BT_BUSCAR_USUARIO.BackColor = System.Drawing.Color.GreenYellow;
             this.BT_BUSCAR_USUARIO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BT_BUSCAR_USUARIO.Location = new System.Drawing.Point(825, 560);
             this.BT_BUSCAR_USUARIO.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -69,7 +70,7 @@
             // BT_REGISTRAR
             // 
             this.BT_REGISTRAR.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BT_REGISTRAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BT_REGISTRAR.BackColor = System.Drawing.Color.Yellow;
             this.BT_REGISTRAR.Location = new System.Drawing.Point(825, 701);
             this.BT_REGISTRAR.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BT_REGISTRAR.Name = "BT_REGISTRAR";
@@ -82,8 +83,8 @@
             // BT_INVITADO
             // 
             this.BT_INVITADO.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BT_INVITADO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BT_INVITADO.Location = new System.Drawing.Point(825, 839);
+            this.BT_INVITADO.BackColor = System.Drawing.Color.Salmon;
+            this.BT_INVITADO.Location = new System.Drawing.Point(825, 819);
             this.BT_INVITADO.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BT_INVITADO.Name = "BT_INVITADO";
             this.BT_INVITADO.Size = new System.Drawing.Size(235, 90);
@@ -96,6 +97,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Location = new System.Drawing.Point(719, 487);
@@ -108,6 +110,7 @@
             // PB_LOGO
             // 
             this.PB_LOGO.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.PB_LOGO.BackColor = System.Drawing.Color.Transparent;
             this.PB_LOGO.Image = ((System.Drawing.Image)(resources.GetObject("PB_LOGO.Image")));
             this.PB_LOGO.Location = new System.Drawing.Point(770, -5);
             this.PB_LOGO.Name = "PB_LOGO";
@@ -119,6 +122,7 @@
             // lb_conexion
             // 
             this.lb_conexion.AutoSize = true;
+            this.lb_conexion.BackColor = System.Drawing.Color.Transparent;
             this.lb_conexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_conexion.Location = new System.Drawing.Point(155, 897);
             this.lb_conexion.Name = "lb_conexion";
@@ -129,6 +133,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(1, 897);
             this.label1.Name = "label1";
@@ -140,6 +145,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lb_conexion);
