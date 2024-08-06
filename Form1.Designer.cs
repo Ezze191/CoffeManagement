@@ -84,7 +84,7 @@
             // 
             this.BT_INVITADO.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BT_INVITADO.BackColor = System.Drawing.Color.Salmon;
-            this.BT_INVITADO.Location = new System.Drawing.Point(825, 819);
+            this.BT_INVITADO.Location = new System.Drawing.Point(616, 808);
             this.BT_INVITADO.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BT_INVITADO.Name = "BT_INVITADO";
             this.BT_INVITADO.Size = new System.Drawing.Size(235, 90);
