@@ -122,7 +122,7 @@
             // 
             // B_3
             // 
-            this.B_3.Location = new System.Drawing.Point(1100, 109);
+            this.B_3.Location = new System.Drawing.Point(1023, 118);
             this.B_3.Name = "B_3";
             this.B_3.Size = new System.Drawing.Size(236, 194);
             this.B_3.TabIndex = 3;
