@@ -58,7 +58,7 @@
             this.BT_BUSCAR_USUARIO.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BT_BUSCAR_USUARIO.BackColor = System.Drawing.Color.GreenYellow;
             this.BT_BUSCAR_USUARIO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.BT_BUSCAR_USUARIO.Location = new System.Drawing.Point(711, 575);
+            this.BT_BUSCAR_USUARIO.Location = new System.Drawing.Point(825, 570);
             this.BT_BUSCAR_USUARIO.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BT_BUSCAR_USUARIO.Name = "BT_BUSCAR_USUARIO";
             this.BT_BUSCAR_USUARIO.Size = new System.Drawing.Size(235, 77);
