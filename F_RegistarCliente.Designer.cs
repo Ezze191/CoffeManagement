@@ -43,10 +43,11 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(491, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(153, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(378, 359);
+            this.pictureBox1.Size = new System.Drawing.Size(239, 240);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -55,10 +56,11 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(427, 424);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(61, 285);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(568, 32);
+            this.label1.Size = new System.Drawing.Size(403, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Ingresa los datos para registrar al cliente";
             // 
@@ -66,7 +68,7 @@
             // 
             this.tb_nombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tb_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_nombre.Location = new System.Drawing.Point(491, 572);
+            this.tb_nombre.Location = new System.Drawing.Point(66, 375);
             this.tb_nombre.Name = "tb_nombre";
             this.tb_nombre.Size = new System.Drawing.Size(411, 38);
             this.tb_nombre.TabIndex = 2;
@@ -75,7 +77,7 @@
             // 
             this.tb_apellido.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tb_apellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_apellido.Location = new System.Drawing.Point(491, 771);
+            this.tb_apellido.Location = new System.Drawing.Point(66, 505);
             this.tb_apellido.Name = "tb_apellido";
             this.tb_apellido.Size = new System.Drawing.Size(411, 38);
             this.tb_apellido.TabIndex = 3;
@@ -84,8 +86,9 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(592, 492);
+            this.label2.Location = new System.Drawing.Point(167, 321);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(181, 51);
             this.label2.TabIndex = 4;
@@ -96,8 +99,9 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(592, 667);
+            this.label3.Location = new System.Drawing.Point(167, 435);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(185, 51);
             this.label3.TabIndex = 5;
@@ -108,7 +112,7 @@
             this.bt_registrarCliente.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.bt_registrarCliente.BackColor = System.Drawing.Color.Lime;
             this.bt_registrarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_registrarCliente.Location = new System.Drawing.Point(601, 869);
+            this.bt_registrarCliente.Location = new System.Drawing.Point(153, 588);
             this.bt_registrarCliente.Name = "bt_registrarCliente";
             this.bt_registrarCliente.Size = new System.Drawing.Size(215, 87);
             this.bt_registrarCliente.TabIndex = 6;
@@ -132,7 +136,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1416, 1011);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(520, 721);
             this.Controls.Add(this.bt_back);
             this.Controls.Add(this.bt_registrarCliente);
             this.Controls.Add(this.label3);

@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Eleccion_de_consumo));
             this.B_1 = new System.Windows.Forms.PictureBox();
             this.B_2 = new System.Windows.Forms.PictureBox();
-            this.B_3 = new System.Windows.Forms.PictureBox();
             this.B_7 = new System.Windows.Forms.PictureBox();
             this.B_8 = new System.Windows.Forms.PictureBox();
             this.B_9 = new System.Windows.Forms.PictureBox();
@@ -83,9 +82,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.B_3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.B_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.B_2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.B_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.B_7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.B_8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.B_9)).BeginInit();
@@ -98,10 +97,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.B_3)).BeginInit();
             this.SuspendLayout();
             // 
             // B_1
             // 
+            this.B_1.BackColor = System.Drawing.Color.Transparent;
             this.B_1.Image = ((System.Drawing.Image)(resources.GetObject("B_1.Image")));
             this.B_1.Location = new System.Drawing.Point(366, 109);
             this.B_1.Name = "B_1";
@@ -112,6 +113,7 @@
             // 
             // B_2
             // 
+            this.B_2.BackColor = System.Drawing.Color.Transparent;
             this.B_2.Image = ((System.Drawing.Image)(resources.GetObject("B_2.Image")));
             this.B_2.Location = new System.Drawing.Point(727, 109);
             this.B_2.Name = "B_2";
@@ -119,16 +121,6 @@
             this.B_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.B_2.TabIndex = 2;
             this.B_2.TabStop = false;
-            // 
-            // B_3
-            // 
-            this.B_3.Image = ((System.Drawing.Image)(resources.GetObject("B_3.Image")));
-            this.B_3.Location = new System.Drawing.Point(1100, 109);
-            this.B_3.Name = "B_3";
-            this.B_3.Size = new System.Drawing.Size(236, 194);
-            this.B_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.B_3.TabIndex = 3;
-            this.B_3.TabStop = false;
             // 
             // B_7
             // 
@@ -142,6 +134,7 @@
             // 
             // B_8
             // 
+            this.B_8.BackColor = System.Drawing.Color.Transparent;
             this.B_8.Image = ((System.Drawing.Image)(resources.GetObject("B_8.Image")));
             this.B_8.Location = new System.Drawing.Point(727, 570);
             this.B_8.Name = "B_8";
@@ -152,6 +145,7 @@
             // 
             // B_9
             // 
+            this.B_9.BackColor = System.Drawing.Color.Transparent;
             this.B_9.Image = ((System.Drawing.Image)(resources.GetObject("B_9.Image")));
             this.B_9.Location = new System.Drawing.Point(1100, 570);
             this.B_9.Name = "B_9";
@@ -162,6 +156,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(1610, -29);
             this.pictureBox1.Name = "pictureBox1";
@@ -193,6 +188,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(366, 343);
             this.pictureBox3.Name = "pictureBox3";
@@ -204,6 +200,7 @@
             // precio0
             // 
             this.precio0.AutoSize = true;
+            this.precio0.BackColor = System.Drawing.Color.Transparent;
             this.precio0.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.precio0.ForeColor = System.Drawing.Color.DarkGreen;
             this.precio0.Location = new System.Drawing.Point(431, 355);
@@ -215,6 +212,7 @@
             // precio1
             // 
             this.precio1.AutoSize = true;
+            this.precio1.BackColor = System.Drawing.Color.Transparent;
             this.precio1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.precio1.ForeColor = System.Drawing.Color.DarkGreen;
             this.precio1.Location = new System.Drawing.Point(792, 355);
@@ -225,6 +223,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(727, 343);
             this.pictureBox4.Name = "pictureBox4";
@@ -246,6 +245,7 @@
             // precio2
             // 
             this.precio2.AutoSize = true;
+            this.precio2.BackColor = System.Drawing.Color.Transparent;
             this.precio2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.precio2.ForeColor = System.Drawing.Color.DarkGreen;
             this.precio2.Location = new System.Drawing.Point(1165, 355);
@@ -257,6 +257,7 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(1100, 343);
             this.pictureBox5.Name = "pictureBox5";
@@ -269,6 +270,7 @@
             // precio3
             // 
             this.precio3.AutoSize = true;
+            this.precio3.BackColor = System.Drawing.Color.Transparent;
             this.precio3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.precio3.ForeColor = System.Drawing.Color.DarkGreen;
             this.precio3.Location = new System.Drawing.Point(431, 782);
@@ -279,6 +281,7 @@
             // 
             // pictureBox9
             // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
             this.pictureBox9.Location = new System.Drawing.Point(366, 770);
             this.pictureBox9.Name = "pictureBox9";
@@ -290,6 +293,7 @@
             // precio4
             // 
             this.precio4.AutoSize = true;
+            this.precio4.BackColor = System.Drawing.Color.Transparent;
             this.precio4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.precio4.ForeColor = System.Drawing.Color.DarkGreen;
             this.precio4.Location = new System.Drawing.Point(792, 782);
@@ -300,6 +304,7 @@
             // 
             // pictureBox10
             // 
+            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
             this.pictureBox10.Location = new System.Drawing.Point(727, 770);
             this.pictureBox10.Name = "pictureBox10";
@@ -311,6 +316,7 @@
             // precio5
             // 
             this.precio5.AutoSize = true;
+            this.precio5.BackColor = System.Drawing.Color.Transparent;
             this.precio5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.precio5.ForeColor = System.Drawing.Color.DarkGreen;
             this.precio5.Location = new System.Drawing.Point(1165, 782);
@@ -321,6 +327,7 @@
             // 
             // pictureBox11
             // 
+            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
             this.pictureBox11.Location = new System.Drawing.Point(1100, 770);
             this.pictureBox11.Name = "pictureBox11";
@@ -685,10 +692,23 @@
             this.label9.TabIndex = 64;
             this.label9.Text = "#";
             // 
+            // B_3
+            // 
+            this.B_3.BackColor = System.Drawing.Color.Transparent;
+            this.B_3.Image = ((System.Drawing.Image)(resources.GetObject("B_3.Image")));
+            this.B_3.Location = new System.Drawing.Point(1100, 109);
+            this.B_3.Name = "B_3";
+            this.B_3.Size = new System.Drawing.Size(236, 194);
+            this.B_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.B_3.TabIndex = 3;
+            this.B_3.TabStop = false;
+            // 
             // Eleccion_de_consumo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1924, 1033);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -753,7 +773,6 @@
             this.Load += new System.EventHandler(this.Eleccion_de_consumo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.B_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.B_2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.B_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.B_7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.B_8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.B_9)).EndInit();
@@ -766,6 +785,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.B_3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -774,7 +794,6 @@
         #endregion
         private System.Windows.Forms.PictureBox B_1;
         private System.Windows.Forms.PictureBox B_2;
-        private System.Windows.Forms.PictureBox B_3;
         private System.Windows.Forms.PictureBox B_7;
         private System.Windows.Forms.PictureBox B_8;
         private System.Windows.Forms.PictureBox B_9;
@@ -826,5 +845,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox B_3;
     }
 }

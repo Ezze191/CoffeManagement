@@ -38,7 +38,6 @@ namespace Proyecto_POO
             F_BuscarUsuario V_BuscarUsuario = new F_BuscarUsuario();
             V_BuscarUsuario.Show();
             
-            this.Hide();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -57,7 +56,12 @@ namespace Proyecto_POO
         {
             F_RegistarCliente registrar = new F_RegistarCliente();
             registrar.Show();
-            this.Hide();
+            
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

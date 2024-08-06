@@ -46,7 +46,7 @@
             this.label.AutoSize = true;
             this.label.BackColor = System.Drawing.Color.Transparent;
             this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.Location = new System.Drawing.Point(672, 363);
+            this.label.Location = new System.Drawing.Point(397, 363);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(514, 52);
             this.label.TabIndex = 0;
@@ -56,9 +56,10 @@
             // BT_BUSCAR_USUARIO
             // 
             this.BT_BUSCAR_USUARIO.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BT_BUSCAR_USUARIO.AutoSize = true;
             this.BT_BUSCAR_USUARIO.BackColor = System.Drawing.Color.GreenYellow;
             this.BT_BUSCAR_USUARIO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.BT_BUSCAR_USUARIO.Location = new System.Drawing.Point(825, 585);
+            this.BT_BUSCAR_USUARIO.Location = new System.Drawing.Point(550, 585);
             this.BT_BUSCAR_USUARIO.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BT_BUSCAR_USUARIO.Name = "BT_BUSCAR_USUARIO";
             this.BT_BUSCAR_USUARIO.Size = new System.Drawing.Size(235, 77);
@@ -71,7 +72,7 @@
             // 
             this.BT_REGISTRAR.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BT_REGISTRAR.BackColor = System.Drawing.Color.Yellow;
-            this.BT_REGISTRAR.Location = new System.Drawing.Point(825, 701);
+            this.BT_REGISTRAR.Location = new System.Drawing.Point(550, 701);
             this.BT_REGISTRAR.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BT_REGISTRAR.Name = "BT_REGISTRAR";
             this.BT_REGISTRAR.Size = new System.Drawing.Size(235, 80);
@@ -84,7 +85,7 @@
             // 
             this.BT_INVITADO.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BT_INVITADO.BackColor = System.Drawing.Color.Salmon;
-            this.BT_INVITADO.Location = new System.Drawing.Point(825, 826);
+            this.BT_INVITADO.Location = new System.Drawing.Point(550, 826);
             this.BT_INVITADO.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BT_INVITADO.Name = "BT_INVITADO";
             this.BT_INVITADO.Size = new System.Drawing.Size(235, 90);
@@ -100,7 +101,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Location = new System.Drawing.Point(719, 487);
+            this.label2.Location = new System.Drawing.Point(444, 487);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(442, 32);
             this.label2.TabIndex = 5;
@@ -112,7 +113,7 @@
             this.PB_LOGO.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.PB_LOGO.BackColor = System.Drawing.Color.Transparent;
             this.PB_LOGO.Image = ((System.Drawing.Image)(resources.GetObject("PB_LOGO.Image")));
-            this.PB_LOGO.Location = new System.Drawing.Point(770, -5);
+            this.PB_LOGO.Location = new System.Drawing.Point(495, -5);
             this.PB_LOGO.Name = "PB_LOGO";
             this.PB_LOGO.Size = new System.Drawing.Size(340, 338);
             this.PB_LOGO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -124,7 +125,7 @@
             this.lb_conexion.AutoSize = true;
             this.lb_conexion.BackColor = System.Drawing.Color.Transparent;
             this.lb_conexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_conexion.Location = new System.Drawing.Point(155, 897);
+            this.lb_conexion.Location = new System.Drawing.Point(175, 912);
             this.lb_conexion.Name = "lb_conexion";
             this.lb_conexion.Size = new System.Drawing.Size(159, 32);
             this.lb_conexion.TabIndex = 7;
@@ -135,18 +136,22 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1, 897);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(21, 912);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(148, 32);
             this.label1.TabIndex = 8;
             this.label1.Text = "STATUS :";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // F_HOME
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1902, 1033);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1352, 953);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lb_conexion);
             this.Controls.Add(this.PB_LOGO);
@@ -157,11 +162,10 @@
             this.Controls.Add(this.label);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "F_HOME";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HOME";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.F_HOME_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PB_LOGO)).EndInit();
             this.ResumeLayout(false);
