@@ -72,6 +72,7 @@
             this.L_Nombre.Size = new System.Drawing.Size(181, 51);
             this.L_Nombre.TabIndex = 2;
             this.L_Nombre.Text = "Nombre";
+            this.L_Nombre.Click += new System.EventHandler(this.L_Nombre_Click);
             // 
             // F_Apellido
             // 
