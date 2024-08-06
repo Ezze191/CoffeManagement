@@ -85,5 +85,10 @@ namespace Proyecto_POO
             this.Hide();   
 
         }
+
+        private void btmas1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

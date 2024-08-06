@@ -488,6 +488,7 @@
             this.btmas1.TabIndex = 47;
             this.btmas1.Text = "+";
             this.btmas1.UseVisualStyleBackColor = false;
+            this.btmas1.Click += new System.EventHandler(this.btmas1_Click);
             // 
             // btmenos2
             // 
