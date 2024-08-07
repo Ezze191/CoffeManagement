@@ -54,12 +54,18 @@ namespace Proyecto_POO
                 ccomparcion.CommandTimeout = 60;
                 MySqlDataReader readercompa;
                 readercompa = ccomparcion.ExecuteReader();
-                if (readercompa.Read())
+               
+                 if (tb_nombre.Text == "admin" && tb_apellido.Text == "admin")
+                {
+                    MessageBox.Show("El usuario admin no se puede registrar");
+                }
+               else if (readercompa.Read())
                 {
                     MessageBox.Show("LOS DATOS YA EXISTEN");
                     readercompa.Close();
-                    
+
                 }
+
                 else
                 {
                     conectarBD.CerrarConexion();

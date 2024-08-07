@@ -83,12 +83,27 @@ namespace Proyecto_POO
                         MySqlDataReader reader2 = comand2.ExecuteReader();
                         if (reader2.Read())
                         {
-                            eleccion.dataCashBack = reader2.GetDouble(0);
-                            reader2.Close();
-                            conectarBDbuscar.CerrarConexion();
-                            eleccion.Show();
-                            this.Close();
+                            if (tb_nombre.Text == "admin" && tb_apellido.Text == "admin")
+                            {
+                                eleccion.dataCashBack = reader2.GetDouble(0);
+                                reader2.Close();
+                                conectarBDbuscar.CerrarConexion();
+                                VentanaAdmin admin = new VentanaAdmin();
+                                admin.Show();
 
+                                this.Close();
+                                 
+                                
+                           
+                            } 
+                            else
+                            {
+                                eleccion.dataCashBack = reader2.GetDouble(0);
+                                reader2.Close();
+                                conectarBDbuscar.CerrarConexion();
+                                eleccion.Show();
+                                this.Close();
+                            }
                         }
                     }
                 } 
