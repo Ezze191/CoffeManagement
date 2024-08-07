@@ -74,6 +74,7 @@
             this.Controls.Add(this.label1);
             this.Name = "VentanaAdmin";
             this.Text = "VentanaAdmin";
+            this.Load += new System.EventHandler(this.VentanaAdmin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

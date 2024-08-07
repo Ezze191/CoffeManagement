@@ -24,8 +24,12 @@ namespace Proyecto_POO
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string[] fila = { "cafe" };
-            dataGridView1.Rows.Add(fila);
+            
+        }
+
+        private void VentanaAdmin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
