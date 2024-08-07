@@ -9,7 +9,7 @@ namespace Proyecto_POO
     public class Sumatorio
     {
         public int suma_cafe = 0;
-        public string st_suma_cafe;
+       
 
         
         
@@ -20,7 +20,7 @@ namespace Proyecto_POO
 
             suma_cafe = suma;
 
-            st_suma_cafe = suma_cafe.ToString();  
+            
 
         }
 
@@ -31,7 +31,7 @@ namespace Proyecto_POO
 
                 suma_cafe = resta;
 
-                st_suma_cafe = suma_cafe.ToString();
+               
             }
 
         }

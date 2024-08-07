@@ -19,19 +19,38 @@ namespace Proyecto_POO
         public string datanombre { get; set; }
         public string dataapellido { get; set; }    
         public int dataVecesVicitadas { get; set; }
-        public string totaltxt { get; set; }
 
-        public double total { get; set; }
+        public double dataCashBack { get; set; }
+
+        public double dinero_a_pagar = 0;
+        public double sr_americano = 0;
+        public double sr_capuccino = 0;
+        public double sr_latte = 0;
+        public double sr_esspreso = 0;
+        public double sr_macciatto = 0;
+        public double sr_moka = 0;
 
         
 
         Cprecios precios = new Cprecios();
 
-        Sumatorio sumatorio = new Sumatorio();  
+        Sumatorio sumatorio = new Sumatorio();
+
+        Sumatorio sumatorio_americano = new Sumatorio();
+        Sumatorio sumatorio_capu = new Sumatorio();
+        Sumatorio sumatorio_latte = new Sumatorio();
+        Sumatorio sumatorio_esspreso = new Sumatorio();
+        Sumatorio sumatorio_macciatto = new Sumatorio();
+        Sumatorio sumatorio_moka = new Sumatorio();
+
+        public void totalizar()
+        {
+            dinero_a_pagar = sr_americano + sr_capuccino + sr_latte + sr_esspreso + sr_macciatto + sr_moka;
+            label14.Text = dinero_a_pagar.ToString();
+        }
 
 
 
-        public double dataCashBack { get; set; }
 
         public Eleccion_de_consumo()
         {
@@ -51,27 +70,26 @@ namespace Proyecto_POO
             int Veces = dataVecesVicitadas;
             double CB = dataCashBack;
 
-            if (datanombre != null || dataapellido != null) {
-                
+            if (datanombre != null || dataapellido != null)
+            {
+
                 lbnombrecompleto.Text = name + " " + lastname;
                 lb_veces.Text = Veces.ToString();
                 lb_cashback.Text = CB.ToString();
             }
-                
-            
-
-
-            
 
             //busca los precios y los actualiza depende a la base de datos
-           
             precios.establecer_precios();
+            precio0.Text = precios.p_cafe_amerciano.ToString();
+            precio1.Text = precios.p_capuccino.ToString();
+            precio2.Text = precios.p_latte_frio.ToString();
+            precio3.Text = precios.p_esspreso.ToString();
+            precio4.Text = precios.p_macciatto.ToString();
+            precio5.Text = precios.p_moka.ToString();
 
-            double p_cafe_americano = precios.p_cafe_amerciano;
-            double p_capuccino = precios.p_capuccino;
-            
-            precio0.Text = p_cafe_americano.ToString();
-            precio1.Text = p_capuccino.ToString();
+
+
+
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -91,10 +109,7 @@ namespace Proyecto_POO
 
         private void bt_regresar_Click(object sender, EventArgs e)
         {
-            F_HOME home = new F_HOME(); 
-            home.Show();
-            this.Hide();   
-
+          
         }
 
         private void btmas1_Click(object sender, EventArgs e)
@@ -104,23 +119,12 @@ namespace Proyecto_POO
 
         private void btmas0_Click(object sender, EventArgs e)
         {
-           sumatorio.sumar_uno_cafe();
-
-            label3.Text = sumatorio.st_suma_cafe;
-
-            double Cashsumar = precios.p_cafe_amerciano * sumatorio.suma_cafe;
-           
-            label14.Text = Cashsumar.ToString();    
+          
         }
 
         private void btmenos0_Click(object sender, EventArgs e)
         {
-            sumatorio.restar_uno_cafe();
-            label3.Text = sumatorio.st_suma_cafe;
-
-            double Cashrestar = precios.p_cafe_amerciano * sumatorio.suma_cafe;
-
-            label14.Text = Cashrestar.ToString();   
+           
             
         }
 
