@@ -160,6 +160,7 @@
             this.Controls.Add(this.BT_REGISTRAR);
             this.Controls.Add(this.BT_BUSCAR_USUARIO);
             this.Controls.Add(this.label);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "F_HOME";

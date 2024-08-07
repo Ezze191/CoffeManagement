@@ -123,5 +123,10 @@ namespace Proyecto_POO
             label14.Text = Cashrestar.ToString();   
             
         }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

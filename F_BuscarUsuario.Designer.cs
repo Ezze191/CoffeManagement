@@ -72,7 +72,7 @@
             this.L_Nombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.L_Nombre.Location = new System.Drawing.Point(166, 232);
             this.L_Nombre.Name = "L_Nombre";
-            this.L_Nombre.Size = new System.Drawing.Size(184, 52);
+            this.L_Nombre.Size = new System.Drawing.Size(181, 51);
             this.L_Nombre.TabIndex = 2;
             this.L_Nombre.Text = "Nombre";
             this.L_Nombre.Click += new System.EventHandler(this.L_Nombre_Click);
@@ -154,11 +154,12 @@
             this.Controls.Add(this.L_Nombre);
             this.Controls.Add(this.tb_nombre);
             this.Controls.Add(this.PB_USUARIO);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "F_BuscarUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BuscarUsuario";
+            this.Text = "Buscar Usuario";
             this.Load += new System.EventHandler(this.F_BuscarUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PB_USUARIO)).EndInit();
             this.ResumeLayout(false);
