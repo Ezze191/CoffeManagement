@@ -18,7 +18,18 @@ namespace Proyecto_POO
     {
         public string datanombre { get; set; }
         public string dataapellido { get; set; }    
-        public int dataVecesVicitadas { get; set; } 
+        public int dataVecesVicitadas { get; set; }
+        public string totaltxt { get; set; }
+
+        public double total { get; set; }
+
+        
+
+        Cprecios precios = new Cprecios();
+
+        Sumatorio sumatorio = new Sumatorio();  
+
+
 
         public double dataCashBack { get; set; }
 
@@ -53,7 +64,7 @@ namespace Proyecto_POO
             
 
             //busca los precios y los actualiza depende a la base de datos
-            Cprecios precios = new Cprecios();
+           
             precios.establecer_precios();
 
             double p_cafe_americano = precios.p_cafe_amerciano;
@@ -88,7 +99,29 @@ namespace Proyecto_POO
 
         private void btmas1_Click(object sender, EventArgs e)
         {
+           
+        }
 
+        private void btmas0_Click(object sender, EventArgs e)
+        {
+           sumatorio.sumar_uno_cafe();
+
+            label3.Text = sumatorio.st_suma_cafe;
+
+            double Cashsumar = precios.p_cafe_amerciano * sumatorio.suma_cafe;
+           
+            label14.Text = Cashsumar.ToString();    
+        }
+
+        private void btmenos0_Click(object sender, EventArgs e)
+        {
+            sumatorio.restar_uno_cafe();
+            label3.Text = sumatorio.st_suma_cafe;
+
+            double Cashrestar = precios.p_cafe_amerciano * sumatorio.suma_cafe;
+
+            label14.Text = Cashrestar.ToString();   
+            
         }
     }
 }
