@@ -75,6 +75,24 @@ namespace Proyecto_POO
             BD_CONEXION.CerrarConexion();
 
         }
+
+        public void subir_restante_cash_back(string name, string apellido, double restante)
+        {
+            BD_CONEXION.EstablecerConexion();
+            restante = restante + guardar_cashback;
+            string consulta = "UPDATE cliente SET cashback = " + restante + " WHERE nombre = " + "'" + name + "'" + "AND apellido = " + "'" + apellido + "'";
+            MySqlCommand comando = new MySqlCommand(consulta, BD_CONEXION.conexion);
+            comando.CommandTimeout = 60;
+            MySqlDataReader reader_comando;
+            reader_comando = comando.ExecuteReader();
+            if (reader_comando.Read())
+            {
+                reader_comando.Close();
+            }
+
+
+            BD_CONEXION.CerrarConexion();
+        }
     }
         
     

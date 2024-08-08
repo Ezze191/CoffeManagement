@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlTypes;
 using System.Drawing;
 using System.Drawing.Text;
 using System.Linq;
@@ -43,18 +44,14 @@ namespace Proyecto_POO
         Sumatorio sumatorio_esspreso = new Sumatorio();
         Sumatorio sumatorio_macciatto = new Sumatorio();
         Sumatorio sumatorio_moka = new Sumatorio();
-
+        
         public void totalizar()
         {
             dinero_a_pagar = sr_americano + sr_capuccino + sr_latte + sr_esspreso + sr_macciatto + sr_moka;
             label14.Text = dinero_a_pagar.ToString();
         }
 
-        public void lista_pedido_total(string description, int x)
-        {
-           
-
-        }
+       
 
 
 
@@ -116,10 +113,11 @@ namespace Proyecto_POO
         {
             if (datanombre == null || dataapellido == null)
             {
-                MessageBox.Show("esta vacio");
+                
             }
             else
             {
+
                 subir_user_base_de_datos subir_datos = new subir_user_base_de_datos();
 
                 double porcentaje = (15 * dinero_a_pagar) / 100;
@@ -161,7 +159,7 @@ namespace Proyecto_POO
 
             sr_americano = precios.p_cafe_amerciano * sumatorio_americano.suma_cafe;
 
-            lista_pedido_total("Cafe americano", sumatorio_americano.suma_cafe);
+            
 
             totalizar();
 
@@ -289,6 +287,28 @@ namespace Proyecto_POO
 
             
             totalizar();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+            if(dataCashBack >= dinero_a_pagar)
+            {
+                subir_user_base_de_datos subir = new subir_user_base_de_datos();
+
+                double resatante = dataCashBack - dinero_a_pagar;
+                subir.consultar(datanombre, dataapellido , 0 , 1);
+                subir.subir_veces(datanombre , dataapellido);
+                subir.subir_restante_cash_back(datanombre, dataapellido, resatante);
+
+                MessageBox.Show("pago con exito");
+
+
+            }
+            else
+            {
+                MessageBox.Show("no cuentas con el suficiente dinero de cashback");
+            }
         }
     }
     }

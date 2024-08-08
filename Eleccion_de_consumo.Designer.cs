@@ -764,6 +764,7 @@
             this.button3.TabIndex = 68;
             this.button3.Text = "Pagar con cashback";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Eleccion_de_consumo
             // 
