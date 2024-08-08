@@ -44,11 +44,13 @@ namespace Proyecto_POO
         Sumatorio sumatorio_esspreso = new Sumatorio();
         Sumatorio sumatorio_macciatto = new Sumatorio();
         Sumatorio sumatorio_moka = new Sumatorio();
-        
+
+        string description = "";
         public void totalizar()
         {
             dinero_a_pagar = sr_americano + sr_capuccino + sr_latte + sr_esspreso + sr_macciatto + sr_moka;
             label14.Text = dinero_a_pagar.ToString();
+           
         }
 
        
@@ -127,7 +129,12 @@ namespace Proyecto_POO
                 subir_datos.subir_cash(datanombre, dataapellido);
                 subir_datos.subir_veces(datanombre, dataapellido);
 
-                MessageBox.Show("se ha pagado correctamente");
+                ticket ver_ticket = new ticket();
+                ver_ticket.data_description = description;
+                ver_ticket.Show();
+                
+
+                
             }
         }
 
@@ -146,7 +153,7 @@ namespace Proyecto_POO
 
             sr_capuccino = precios.p_capuccino * sumatorio_capu.suma_cafe;
 
-            
+            description = description + Environment.NewLine + "1x  ---------------------- Capuccino ------------ " + precios.p_capuccino.ToString();
 
             totalizar();
         }
@@ -159,10 +166,10 @@ namespace Proyecto_POO
 
             sr_americano = precios.p_cafe_amerciano * sumatorio_americano.suma_cafe;
 
-            
+            description = description + Environment.NewLine + "1x  ---------------------- Cafe americano ------------ " + precios.p_cafe_amerciano.ToString();
 
             totalizar();
-
+            
             
 
         }
