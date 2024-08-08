@@ -50,6 +50,11 @@ namespace Proyecto_POO
             label14.Text = dinero_a_pagar.ToString();
         }
 
+        public void lista_pedido_total(string description, int x)
+        {
+           
+
+        }
 
 
 
@@ -71,6 +76,8 @@ namespace Proyecto_POO
             int Veces = dataVecesVicitadas;
             double CB = dataCashBack;
 
+            
+
             if (datanombre != null || dataapellido != null)
             {
 
@@ -78,6 +85,8 @@ namespace Proyecto_POO
                 lb_veces.Text = Veces.ToString();
                 lb_cashback.Text = CB.ToString();
             }
+
+            
 
             //busca los precios y los actualiza depende a la base de datos
             precios.establecer_precios();
@@ -120,7 +129,7 @@ namespace Proyecto_POO
                 subir_datos.subir_cash(datanombre, dataapellido);
                 subir_datos.subir_veces(datanombre, dataapellido);
 
-                MessageBox.Show("se ah pagado correctamente");
+                MessageBox.Show("se ha pagado correctamente");
             }
         }
 
@@ -138,6 +147,9 @@ namespace Proyecto_POO
             label5.Text = sumatorio_capu.suma_cafe.ToString();
 
             sr_capuccino = precios.p_capuccino * sumatorio_capu.suma_cafe;
+
+            
+
             totalizar();
         }
 
@@ -148,7 +160,13 @@ namespace Proyecto_POO
             label3.Text = sumatorio_americano.suma_cafe.ToString();
 
             sr_americano = precios.p_cafe_amerciano * sumatorio_americano.suma_cafe;
+
+            lista_pedido_total("Cafe americano", sumatorio_americano.suma_cafe);
+
             totalizar();
+
+            
+
         }
 
         private void btmenos0_Click(object sender, EventArgs e)
@@ -158,6 +176,8 @@ namespace Proyecto_POO
             label3.Text = sumatorio_americano.suma_cafe.ToString();
 
             sr_americano = precios.p_cafe_amerciano * sumatorio_americano.suma_cafe;
+
+            
             totalizar();
         }
 
@@ -174,6 +194,8 @@ namespace Proyecto_POO
             label5.Text = sumatorio_capu.suma_cafe.ToString();
 
             sr_capuccino = precios.p_capuccino * sumatorio_capu.suma_cafe;
+
+          
             totalizar();
         }
 
@@ -183,6 +205,8 @@ namespace Proyecto_POO
             label6.Text = sumatorio_latte.suma_cafe.ToString();
 
             sr_latte = precios.p_latte_frio * sumatorio_latte.suma_cafe;
+
+           
             totalizar();
         }
 
@@ -192,6 +216,9 @@ namespace Proyecto_POO
             label6.Text = sumatorio_latte.suma_cafe.ToString();
 
             sr_latte = precios.p_latte_frio * sumatorio_latte.suma_cafe;
+
+          
+
             totalizar();
         }
 
@@ -201,6 +228,8 @@ namespace Proyecto_POO
             label7.Text = sumatorio_esspreso.suma_cafe.ToString();
 
             sr_esspreso = precios.p_esspreso * sumatorio_esspreso.suma_cafe;
+
+            
             totalizar();
         }
 
@@ -210,6 +239,9 @@ namespace Proyecto_POO
             label7.Text = sumatorio_esspreso.suma_cafe.ToString();
 
             sr_esspreso = precios.p_esspreso * sumatorio_esspreso.suma_cafe;
+
+           
+
             totalizar();
         }
 
@@ -219,6 +251,9 @@ namespace Proyecto_POO
             label8.Text = sumatorio_macciatto.suma_cafe.ToString();
 
             sr_macciatto = precios.p_macciatto * sumatorio_macciatto.suma_cafe;
+
+           
+
             totalizar();
         }
 
@@ -228,6 +263,9 @@ namespace Proyecto_POO
             label8.Text = sumatorio_macciatto.suma_cafe.ToString();
 
             sr_macciatto = precios.p_macciatto * sumatorio_macciatto.suma_cafe;
+
+            
+
             totalizar();
         }
 
@@ -237,6 +275,8 @@ namespace Proyecto_POO
             label99.Text = sumatorio_moka.suma_cafe.ToString();
 
             sr_macciatto = precios.p_moka * sumatorio_moka.suma_cafe;
+
+           
             totalizar();
         }
 
@@ -246,6 +286,8 @@ namespace Proyecto_POO
             label99.Text = sumatorio_moka.suma_cafe.ToString();
 
             sr_macciatto = precios.p_moka * sumatorio_moka.suma_cafe;
+
+            
             totalizar();
         }
     }
