@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Text;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -104,33 +105,149 @@ namespace Proyecto_POO
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if (datanombre == null || dataapellido == null)
+            {
+                MessageBox.Show("esta vacio");
+            }
+            else
+            {
+                subir_user_base_de_datos subir_datos = new subir_user_base_de_datos();
 
+                double porcentaje = (15 * dinero_a_pagar) / 100;
+
+                subir_datos.consultar(datanombre, dataapellido, porcentaje, 1);
+
+                subir_datos.subir_cash(datanombre, dataapellido);
+                subir_datos.subir_veces(datanombre, dataapellido);
+
+                MessageBox.Show("se ah pagado correctamente");
+            }
         }
 
         private void bt_regresar_Click(object sender, EventArgs e)
         {
-          
+            F_HOME home = new F_HOME();
+            home.Show();
+            this.Hide();
+
         }
 
         private void btmas1_Click(object sender, EventArgs e)
         {
-           
+            sumatorio_capu.sumar_uno_cafe();
+            label5.Text = sumatorio_capu.suma_cafe.ToString();
+
+            sr_capuccino = precios.p_capuccino * sumatorio_capu.suma_cafe;
+            totalizar();
         }
 
         private void btmas0_Click(object sender, EventArgs e)
         {
-          
+            sumatorio_americano.sumar_uno_cafe();
+
+            label3.Text = sumatorio_americano.suma_cafe.ToString();
+
+            sr_americano = precios.p_cafe_amerciano * sumatorio_americano.suma_cafe;
+            totalizar();
         }
 
         private void btmenos0_Click(object sender, EventArgs e)
         {
-           
-            
+
+            sumatorio_americano.restar_uno_cafe();
+            label3.Text = sumatorio_americano.suma_cafe.ToString();
+
+            sr_americano = precios.p_cafe_amerciano * sumatorio_americano.suma_cafe;
+            totalizar();
         }
+
+
 
         private void label14_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void btmenos1_Click(object sender, EventArgs e)
+        {
+            sumatorio_capu.restar_uno_cafe();
+            label5.Text = sumatorio_capu.suma_cafe.ToString();
+
+            sr_capuccino = precios.p_capuccino * sumatorio_capu.suma_cafe;
+            totalizar();
+        }
+
+        private void btmenos2_Click(object sender, EventArgs e)
+        {
+            sumatorio_latte.restar_uno_cafe();
+            label6.Text = sumatorio_latte.suma_cafe.ToString();
+
+            sr_latte = precios.p_latte_frio * sumatorio_latte.suma_cafe;
+            totalizar();
+        }
+
+        private void btmas2_Click(object sender, EventArgs e)
+        {
+            sumatorio_latte.sumar_uno_cafe();
+            label6.Text = sumatorio_latte.suma_cafe.ToString();
+
+            sr_latte = precios.p_latte_frio * sumatorio_latte.suma_cafe;
+            totalizar();
+        }
+
+        private void btmenos3_Click(object sender, EventArgs e)
+        {
+            sumatorio_esspreso.restar_uno_cafe();
+            label7.Text = sumatorio_esspreso.suma_cafe.ToString();
+
+            sr_esspreso = precios.p_esspreso * sumatorio_esspreso.suma_cafe;
+            totalizar();
+        }
+
+        private void btmas3_Click(object sender, EventArgs e)
+        {
+            sumatorio_esspreso.sumar_uno_cafe();
+            label7.Text = sumatorio_esspreso.suma_cafe.ToString();
+
+            sr_esspreso = precios.p_esspreso * sumatorio_esspreso.suma_cafe;
+            totalizar();
+        }
+
+        private void btmenos4_Click(object sender, EventArgs e)
+        {
+            sumatorio_macciatto.restar_uno_cafe();
+            label8.Text = sumatorio_macciatto.suma_cafe.ToString();
+
+            sr_macciatto = precios.p_macciatto * sumatorio_macciatto.suma_cafe;
+            totalizar();
+        }
+
+        private void btmas4_Click(object sender, EventArgs e)
+        {
+            sumatorio_macciatto.sumar_uno_cafe();
+            label8.Text = sumatorio_macciatto.suma_cafe.ToString();
+
+            sr_macciatto = precios.p_macciatto * sumatorio_macciatto.suma_cafe;
+            totalizar();
+        }
+
+        private void btmenos5_Click(object sender, EventArgs e)
+        {
+            sumatorio_moka.restar_uno_cafe();
+            label99.Text = sumatorio_moka.suma_cafe.ToString();
+
+            sr_macciatto = precios.p_moka * sumatorio_moka.suma_cafe;
+            totalizar();
+        }
+
+        private void btmas5_Click(object sender, EventArgs e)
+        {
+            sumatorio_moka.sumar_uno_cafe();
+            label99.Text = sumatorio_moka.suma_cafe.ToString();
+
+            sr_macciatto = precios.p_moka * sumatorio_moka.suma_cafe;
+            totalizar();
+        }
     }
-}
+    }
+

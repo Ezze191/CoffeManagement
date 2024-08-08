@@ -81,7 +81,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.label99 = new System.Windows.Forms.Label();
             this.B_3 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -508,6 +508,7 @@
             this.btmenos1.Text = "-";
             this.btmenos1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btmenos1.UseVisualStyleBackColor = false;
+            this.btmenos1.Click += new System.EventHandler(this.btmenos1_Click);
             // 
             // btmas1
             // 
@@ -534,6 +535,7 @@
             this.btmenos2.Text = "-";
             this.btmenos2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btmenos2.UseVisualStyleBackColor = false;
+            this.btmenos2.Click += new System.EventHandler(this.btmenos2_Click);
             // 
             // btmas2
             // 
@@ -546,6 +548,7 @@
             this.btmas2.TabIndex = 49;
             this.btmas2.Text = "+";
             this.btmas2.UseVisualStyleBackColor = false;
+            this.btmas2.Click += new System.EventHandler(this.btmas2_Click);
             // 
             // btmenos5
             // 
@@ -559,6 +562,7 @@
             this.btmenos5.Text = "-";
             this.btmenos5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btmenos5.UseVisualStyleBackColor = false;
+            this.btmenos5.Click += new System.EventHandler(this.btmenos5_Click);
             // 
             // btmas5
             // 
@@ -571,6 +575,7 @@
             this.btmas5.TabIndex = 55;
             this.btmas5.Text = "+";
             this.btmas5.UseVisualStyleBackColor = false;
+            this.btmas5.Click += new System.EventHandler(this.btmas5_Click);
             // 
             // btmenos4
             // 
@@ -584,6 +589,7 @@
             this.btmenos4.Text = "-";
             this.btmenos4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btmenos4.UseVisualStyleBackColor = false;
+            this.btmenos4.Click += new System.EventHandler(this.btmenos4_Click);
             // 
             // btmas4
             // 
@@ -596,6 +602,7 @@
             this.btmas4.TabIndex = 53;
             this.btmas4.Text = "+";
             this.btmas4.UseVisualStyleBackColor = false;
+            this.btmas4.Click += new System.EventHandler(this.btmas4_Click);
             // 
             // btmenos3
             // 
@@ -609,6 +616,7 @@
             this.btmenos3.Text = "-";
             this.btmenos3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btmenos3.UseVisualStyleBackColor = false;
+            this.btmenos3.Click += new System.EventHandler(this.btmenos3_Click);
             // 
             // btmas3
             // 
@@ -621,6 +629,7 @@
             this.btmas3.TabIndex = 51;
             this.btmas3.Text = "+";
             this.btmas3.UseVisualStyleBackColor = false;
+            this.btmas3.Click += new System.EventHandler(this.btmas3_Click);
             // 
             // label2
             // 
@@ -693,15 +702,15 @@
             this.label8.TabIndex = 63;
             this.label8.Text = "0";
             // 
-            // label9
+            // label99
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(1212, 878);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(27, 29);
-            this.label9.TabIndex = 64;
-            this.label9.Text = "0";
+            this.label99.AutoSize = true;
+            this.label99.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label99.Location = new System.Drawing.Point(1212, 878);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(27, 29);
+            this.label99.TabIndex = 64;
+            this.label99.Text = "0";
             // 
             // B_3
             // 
@@ -767,7 +776,7 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label99);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -902,7 +911,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label99;
         private System.Windows.Forms.PictureBox B_3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;

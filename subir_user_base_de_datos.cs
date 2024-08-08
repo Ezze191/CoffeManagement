@@ -47,13 +47,32 @@ namespace Proyecto_POO
         public void subir_cash(string name , string apellido)
         {
             BD_CONEXION.EstablecerConexion();
-            string consulta = "UPDATE cliente SET cashback = " + guardar_cuantas_veces + " WHERE nombre = " + "'" + name + "'" + "AND apellido = " + "'" + apellido + "'";
+            string consulta = "UPDATE cliente SET cashback = " + guardar_cashback + " WHERE nombre = " + "'" + name + "'" + "AND apellido = " + "'" + apellido + "'";
+            MySqlCommand comando = new MySqlCommand(consulta, BD_CONEXION.conexion);
+            comando.CommandTimeout = 60;
+            MySqlDataReader reader_comando;
+            reader_comando = comando.ExecuteReader();
+            if (reader_comando.Read())
+            {
+                reader_comando.Close();
+            }
             BD_CONEXION.CerrarConexion();
 
         }
 
         public void subir_veces(string name, string apellido)
         {
+            BD_CONEXION.EstablecerConexion();
+            string consulta = "UPDATE cliente SET Vecesvisitadas = " + guardar_cuantas_veces + " WHERE nombre = " + "'" + name + "'" + "AND apellido = " + "'" + apellido + "'";
+            MySqlCommand comando = new MySqlCommand(consulta, BD_CONEXION.conexion);
+            comando.CommandTimeout = 60;
+            MySqlDataReader reader_comando;
+            reader_comando = comando.ExecuteReader();
+            if (reader_comando.Read())
+            {
+                reader_comando.Close();
+            }
+            BD_CONEXION.CerrarConexion();
 
         }
     }
