@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="actualizarPrecio.cs" />
     <Compile Include="Conexion_BaseDatos.cs" />
     <Compile Include="Cprecios.cs" />
     <Compile Include="Eleccion_de_consumo.cs">
