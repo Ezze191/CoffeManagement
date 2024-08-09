@@ -15,7 +15,7 @@ namespace Proyecto_POO
         public void actualizarPrecios(string nombre,double precio)
         {
             actualizar.EstablecerConexion();
-            string consulta = "Update bebidas set precio = " + precio + "where nombre = 'capuccino'";
+            string consulta = "UPDATE bebidas SET precio = " + precio + "WHERE nombre = " + "'" + nombre + "';";
             MySqlCommand comando = new MySqlCommand(consulta, actualizar.conexion);
             comando.CommandTimeout = 60;
             MySqlDataReader reader;

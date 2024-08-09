@@ -78,10 +78,10 @@ namespace Proyecto_POO
 
         }
 
-        public void subir_restante_cash_back(string name, string apellido, double restante)
+        public void subir_restante_cash_back(string name, string apellido,  double total_compra)
         {
             BD_CONEXION.EstablecerConexion();
-            restante = guardar_cashback - restante;
+            double restante = guardar_cashback - total_compra;
             string consulta = "UPDATE cliente SET cashback = " + restante + " WHERE nombre = " + "'" + name + "'" + "AND apellido = " + "'" + apellido + "'";
             MySqlCommand comando = new MySqlCommand(consulta, BD_CONEXION.conexion);
             comando.CommandTimeout = 60;

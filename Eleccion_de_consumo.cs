@@ -307,10 +307,12 @@ namespace Proyecto_POO
             {
                 subir_user_base_de_datos subir = new subir_user_base_de_datos();
 
-                double resatante = dataCashBack - dinero_a_pagar;
+               
+
                 subir.consultar(datanombre, dataapellido, 0, 1);
+
                 subir.subir_veces(datanombre, dataapellido);
-                subir.subir_restante_cash_back(datanombre, dataapellido, resatante);
+                subir.subir_restante_cash_back(datanombre, dataapellido,dinero_a_pagar);
 
                 MessageBox.Show("pago con exito");
 
