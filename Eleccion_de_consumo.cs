@@ -117,6 +117,10 @@ namespace Proyecto_POO
             {
                 
             }
+            else if(dinero_a_pagar <= 0)
+            {
+                MessageBox.Show("NO HAY NADA PARA PAGAR");
+            }
             else
             {
 
@@ -304,7 +308,8 @@ namespace Proyecto_POO
                 subir_user_base_de_datos subir = new subir_user_base_de_datos();
 
                 double resatante = dataCashBack - dinero_a_pagar;
-               
+                subir.consultar(datanombre, dataapellido, 0, 1);
+                subir.subir_veces(datanombre, dataapellido);
                 subir.subir_restante_cash_back(datanombre, dataapellido, resatante);
 
                 MessageBox.Show("pago con exito");
