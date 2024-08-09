@@ -29,5 +29,10 @@ namespace Proyecto_POO
         {
             label1.Text = data_description;
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
