@@ -42,11 +42,20 @@ namespace Proyecto_POO
                 ticket_label_lastname.Text = data_apellido;
                 
             }
-
-            int[] codigo_barras = new int[13];
-            string codigo;
-            Random aleatorio = new Random();
+            string[] codigo = new string[14];
             
+            void llenar_codigo()
+            {
+                string[] opciones = { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+                Random ra = new Random();
+                
+                for(int i = 0; i < 14; i++)
+                {
+                    codigo[i] = opciones[ra.Next(0, opciones.Length)];
+                    
+                }
+            }
+           
 
             //fitrar el array para ver cual esta vacio y filtrarlo para que solamte se agregen los que estan llenos
             var Filter_names = ticket_results.Where(n => n != null).ToArray();

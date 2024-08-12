@@ -47,6 +47,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.ticket_ventatotal = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -227,11 +228,21 @@
             this.ticket_ventatotal.TabIndex = 17;
             this.ticket_ventatotal.Text = "Pzas";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(131, 423);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(73, 16);
+            this.label13.TabIndex = 18;
+            this.label13.Text = "Venta total:";
+            // 
             // ticket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(413, 450);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.ticket_ventatotal);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -279,5 +290,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label ticket_ventatotal;
+        private System.Windows.Forms.Label label13;
     }
 }
