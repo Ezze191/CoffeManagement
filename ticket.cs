@@ -19,6 +19,8 @@ namespace Proyecto_POO
 
         public string data_apellido { get; set; }
 
+        public string metodo_de_pago = "Dinero del cliente";
+
         DateTime fecha_now =  DateTime.Now;
 
 
@@ -43,7 +45,7 @@ namespace Proyecto_POO
                 
             }
             string[] codigo = new string[14];
-            
+            llenar_codigo();
             void llenar_codigo()
             {
                 string[] opciones = { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
@@ -55,7 +57,11 @@ namespace Proyecto_POO
                     
                 }
             }
-           
+
+            lb_codigo_barras.Text = codigo[0] + " " + codigo[1] + " " + codigo[2] + " " + codigo[3] + " " + codigo[4] + " " +
+            codigo[5] + " " + codigo[6] + " " + codigo[7] + " " + codigo[8] + " " + codigo[9] + " " + codigo[10] + " " + codigo[11] + " " + codigo[12] + " " + codigo[13];
+
+            lb_metododepago.Text = metodo_de_pago;
 
             //fitrar el array para ver cual esta vacio y filtrarlo para que solamte se agregen los que estan llenos
             var Filter_names = ticket_results.Where(n => n != null).ToArray();
@@ -100,6 +106,12 @@ namespace Proyecto_POO
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void bt_ok_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MessageBox.Show("COMPRA REALIZADA CON EXITO");
         }
     }
 }

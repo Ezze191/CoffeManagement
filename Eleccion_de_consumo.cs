@@ -122,6 +122,7 @@ namespace Proyecto_POO
                 else { 
                 ver_ticket.data_total = dinero_a_pagar.ToString();
                 ver_ticket.Show();
+                
                 }
             }
             else if(dinero_a_pagar <= 0)
@@ -142,6 +143,7 @@ namespace Proyecto_POO
 
                 ver_ticket.data_name = datanombre;
                 ver_ticket.data_apellido = dataapellido;
+                
 
                 ver_ticket.data_total = dinero_a_pagar.ToString();
                 ver_ticket.Show();
@@ -169,7 +171,7 @@ namespace Proyecto_POO
 
             sr_capuccino = precios.p_capuccino * sumatorio_capu.suma_cafe;
 
-            ver_ticket.ticket_results[1] = label5.Text + "x -------------------- Capuccino";
+            ver_ticket.ticket_results[1] = "$" + sr_capuccino + " -------------------- " + label5.Text + "x -------------------- Capuccino";
 
             totalizar();
         }
@@ -182,7 +184,7 @@ namespace Proyecto_POO
 
             sr_americano = precios.p_cafe_amerciano * sumatorio_americano.suma_cafe;
 
-            ver_ticket.ticket_results[0] = label3.Text + "x -------------------- Cafe amerciano";
+            ver_ticket.ticket_results[0] = "$" + sr_americano +  " -------------------- " + label3.Text + "x -------------------- Cafe amerciano";
 
             totalizar();
             
@@ -198,7 +200,7 @@ namespace Proyecto_POO
 
             sr_americano = precios.p_cafe_amerciano * sumatorio_americano.suma_cafe;
 
-            ver_ticket.ticket_results[0] = label3.Text + "x -------------------- Cafe amerciano";
+            ver_ticket.ticket_results[0] = "$" + sr_americano + " -------------------- " + label3.Text + "x -------------------- Cafe amerciano";
 
             totalizar();
         }
@@ -217,7 +219,7 @@ namespace Proyecto_POO
 
             sr_capuccino = precios.p_capuccino * sumatorio_capu.suma_cafe;
 
-            ver_ticket.ticket_results[1] = label5.Text + "x -------------------- Capuccino";
+            ver_ticket.ticket_results[1] = "$" + sr_capuccino + " -------------------- " + label5.Text + "x -------------------- Capuccino";
 
             totalizar();
         }
@@ -229,7 +231,7 @@ namespace Proyecto_POO
 
             sr_latte = precios.p_latte_frio * sumatorio_latte.suma_cafe;
 
-            ver_ticket.ticket_results[2] = label6.Text + "x -------------------- Latte frio";
+            ver_ticket.ticket_results[2] = "$" + sr_latte + " -------------------- " + label6.Text + "x -------------------- Latte frio";
 
             totalizar();
         }
@@ -241,7 +243,7 @@ namespace Proyecto_POO
 
             sr_latte = precios.p_latte_frio * sumatorio_latte.suma_cafe;
 
-            ver_ticket.ticket_results[2] = label6.Text + "x -------------------- Latte frio";
+            ver_ticket.ticket_results[2] = "$" + sr_latte + " -------------------- " + label6.Text + "x -------------------- Latte frio";
 
             totalizar();
         }
@@ -253,7 +255,7 @@ namespace Proyecto_POO
 
             sr_esspreso = precios.p_esspreso * sumatorio_esspreso.suma_cafe;
 
-            ver_ticket.ticket_results[3] = label7.Text + "x -------------------- Esspreso";
+            ver_ticket.ticket_results[3] = "$" + sr_esspreso + " -------------------- " + label7.Text + "x -------------------- Esspreso";
 
             totalizar();
         }
@@ -265,7 +267,7 @@ namespace Proyecto_POO
 
             sr_esspreso = precios.p_esspreso * sumatorio_esspreso.suma_cafe;
 
-            ver_ticket.ticket_results[3] = label7.Text + "x -------------------- Esspreso";
+            ver_ticket.ticket_results[3] = "$" + sr_esspreso + " -------------------- " + label7.Text + "x -------------------- Esspreso";
 
             totalizar();
         }
@@ -277,7 +279,7 @@ namespace Proyecto_POO
 
             sr_macciatto = precios.p_macciatto * sumatorio_macciatto.suma_cafe;
 
-            ver_ticket.ticket_results[4] = label8.Text + "x -------------------- Macciatto";
+            ver_ticket.ticket_results[4] = "$" + sr_macciatto + " -------------------- " + label8.Text + "x -------------------- Macciatto";
 
             totalizar();
         }
@@ -289,7 +291,7 @@ namespace Proyecto_POO
 
             sr_macciatto = precios.p_macciatto * sumatorio_macciatto.suma_cafe;
 
-            ver_ticket.ticket_results[4] = label8.Text + "x -------------------- Macciatto";
+            ver_ticket.ticket_results[4] = "$" + sr_macciatto + " -------------------- " + label8.Text + "x -------------------- Macciatto";
 
             totalizar();
         }
@@ -299,9 +301,9 @@ namespace Proyecto_POO
             sumatorio_moka.restar_uno_cafe();
             label99.Text = sumatorio_moka.suma_cafe.ToString();
 
-            sr_macciatto = precios.p_moka * sumatorio_moka.suma_cafe;
+            sr_moka = precios.p_moka * sumatorio_moka.suma_cafe;
 
-            ver_ticket.ticket_results[5] = label99.Text + "x -------------------- Moka";
+            ver_ticket.ticket_results[5] = "$" + sr_moka + " -------------------- " + label99.Text + "x -------------------- Moka";
 
 
             totalizar();
@@ -312,17 +314,21 @@ namespace Proyecto_POO
             sumatorio_moka.sumar_uno_cafe();
             label99.Text = sumatorio_moka.suma_cafe.ToString();
 
-            sr_macciatto = precios.p_moka * sumatorio_moka.suma_cafe;
+            sr_moka = precios.p_moka * sumatorio_moka.suma_cafe;
 
-            ver_ticket.ticket_results[5] = label99.Text + "x -------------------- Moka";
+            ver_ticket.ticket_results[5] = "$" + sr_moka + " -------------------- " + label99.Text + "x -------------------- Moka";
 
             totalizar();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            if (datanombre == null || dataapellido == null) 
+            {
+                MessageBox.Show("TE TIENES QUE REGISTRAR PARA PAGAR CON CASHBACK");
+            }
             
-            if(dataCashBack >= dinero_a_pagar)
+            else if(dataCashBack >= dinero_a_pagar)
             {
                 subir_user_base_de_datos subir = new subir_user_base_de_datos();
 
@@ -332,15 +338,25 @@ namespace Proyecto_POO
 
                 subir.subir_veces(datanombre, dataapellido);
                 subir.subir_restante_cash_back(datanombre, dataapellido,dinero_a_pagar);
-
-                MessageBox.Show("pago con exito");
-
+                ver_ticket.data_name = datanombre;
+                ver_ticket.data_apellido = dataapellido;
+                ver_ticket.metodo_de_pago = "Cashback";
+                ver_ticket.data_total = dinero_a_pagar.ToString();
+                ver_ticket.Show();
+               
 
             }
-            else
+            else if(dataCashBack < dinero_a_pagar)
             {
                 MessageBox.Show("no cuentas con el suficiente dinero de cashback");
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();    
+            F_HOME inicio = new F_HOME();
+            inicio.Show();  
         }
     }
     }
