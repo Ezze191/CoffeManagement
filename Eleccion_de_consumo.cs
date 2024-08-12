@@ -8,6 +8,7 @@ using System.Data.SqlTypes;
 using System.Drawing;
 using System.Drawing.Text;
 using System.Linq;
+using System.Media;
 using System.Reflection.Emit;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -120,13 +121,18 @@ namespace Proyecto_POO
                     MessageBox.Show("NO HAY NADA PARA PAGAR");
                 }
                 else {
-                   
-                    
+                    string soundFilePath = System.IO.Path.Combine(Application.StartupPath, "sounds", "casheffect.wav");
+                    SoundPlayer player = new SoundPlayer(soundFilePath);
+                    player.Play();
+
+
                     ver_ticket.data_total = dinero_a_pagar.ToString();
                     ver_ticket.Show();
 
                     cambio.dinero_a_pagar = dinero_a_pagar;
                     cambio.Show();
+
+
                 }
             }
             else if(dinero_a_pagar <= 0)
@@ -148,13 +154,19 @@ namespace Proyecto_POO
                
                 ver_ticket.data_name = datanombre;
                 ver_ticket.data_apellido = dataapellido;
-                
-                
+
+                string soundFilePath = System.IO.Path.Combine(Application.StartupPath, "sounds", "casheffect.wav");
+                SoundPlayer player = new SoundPlayer(soundFilePath);
+                player.Play();
+
+
                 ver_ticket.data_total = dinero_a_pagar.ToString();
                 ver_ticket.Show();
 
                 cambio.dinero_a_pagar = dinero_a_pagar;
                 cambio.Show();
+
+                
 
 
 
@@ -347,9 +359,16 @@ namespace Proyecto_POO
                 ver_ticket.data_name = datanombre;
                 ver_ticket.data_apellido = dataapellido;
                 ver_ticket.metodo_de_pago = "Cashback";
+
+                string soundFilePath = System.IO.Path.Combine(Application.StartupPath, "sounds", "casheffect.wav");
+                SoundPlayer player = new SoundPlayer(soundFilePath);
+                player.Play();
+
                 ver_ticket.data_total = dinero_a_pagar.ToString();
                 ver_ticket.Show();
+
                
+
 
             }
             else if(dataCashBack < dinero_a_pagar)

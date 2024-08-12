@@ -52,6 +52,10 @@ namespace Proyecto_POO
 
                     lb_cambio.Text = "$" + cambio.ToString();
                     pagado = true;
+                    
+                    
+                    
+                    
                 }
              
            

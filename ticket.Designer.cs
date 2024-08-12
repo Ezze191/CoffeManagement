@@ -86,7 +86,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(137, 99);
+            this.label1.Location = new System.Drawing.Point(137, 92);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 16);
             this.label1.TabIndex = 2;
@@ -95,7 +95,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(-6, 99);
+            this.label2.Location = new System.Drawing.Point(-6, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(143, 16);
             this.label2.TabIndex = 3;
@@ -104,7 +104,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(255, 100);
+            this.label3.Location = new System.Drawing.Point(255, 93);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(155, 16);
             this.label3.TabIndex = 4;
@@ -113,7 +113,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 127);
+            this.label4.Location = new System.Drawing.Point(5, 120);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 16);
             this.label4.TabIndex = 5;
@@ -123,7 +123,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(5, 145);
+            this.label5.Location = new System.Drawing.Point(5, 140);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(63, 16);
             this.label5.TabIndex = 6;
@@ -133,7 +133,7 @@
             // lb_ticket_name
             // 
             this.lb_ticket_name.AutoSize = true;
-            this.lb_ticket_name.Location = new System.Drawing.Point(73, 130);
+            this.lb_ticket_name.Location = new System.Drawing.Point(73, 123);
             this.lb_ticket_name.Name = "lb_ticket_name";
             this.lb_ticket_name.Size = new System.Drawing.Size(42, 16);
             this.lb_ticket_name.TabIndex = 7;
@@ -143,7 +143,7 @@
             // ticket_label_lastname
             // 
             this.ticket_label_lastname.AutoSize = true;
-            this.ticket_label_lastname.Location = new System.Drawing.Point(74, 148);
+            this.ticket_label_lastname.Location = new System.Drawing.Point(74, 141);
             this.ticket_label_lastname.Name = "ticket_label_lastname";
             this.ticket_label_lastname.Size = new System.Drawing.Size(42, 16);
             this.ticket_label_lastname.TabIndex = 8;
@@ -153,7 +153,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(30, 112);
+            this.label6.Location = new System.Drawing.Point(30, 105);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 16);
             this.label6.TabIndex = 9;
@@ -181,7 +181,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(158, 129);
+            this.label9.Location = new System.Drawing.Point(158, 122);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(51, 16);
             this.label9.TabIndex = 12;
@@ -190,7 +190,7 @@
             // ticket_label_fecha
             // 
             this.ticket_label_fecha.AutoSize = true;
-            this.ticket_label_fecha.Location = new System.Drawing.Point(215, 130);
+            this.ticket_label_fecha.Location = new System.Drawing.Point(215, 123);
             this.ticket_label_fecha.Name = "ticket_label_fecha";
             this.ticket_label_fecha.Size = new System.Drawing.Size(42, 16);
             this.ticket_label_fecha.TabIndex = 13;
@@ -276,7 +276,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(157, 148);
+            this.label14.Location = new System.Drawing.Point(157, 141);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(110, 16);
             this.label14.TabIndex = 22;
@@ -285,7 +285,7 @@
             // lb_metododepago
             // 
             this.lb_metododepago.AutoSize = true;
-            this.lb_metododepago.Location = new System.Drawing.Point(269, 148);
+            this.lb_metododepago.Location = new System.Drawing.Point(269, 141);
             this.lb_metododepago.Name = "lb_metododepago";
             this.lb_metododepago.Size = new System.Drawing.Size(42, 16);
             this.lb_metododepago.TabIndex = 23;

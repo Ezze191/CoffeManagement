@@ -19,10 +19,15 @@ namespace Proyecto_POO
 
         public string data_apellido { get; set; }
 
+        public double dinero_ingresado_cliente { get; set; }
+
+        public double dinero_cambio {  get; set; }
+
         public string metodo_de_pago = "Dinero del cliente";
 
         DateTime fecha_now =  DateTime.Now;
 
+        
 
         public ticket()
         {
@@ -62,6 +67,8 @@ namespace Proyecto_POO
             codigo[5] + " " + codigo[6] + " " + codigo[7] + " " + codigo[8] + " " + codigo[9] + " " + codigo[10] + " " + codigo[11] + " " + codigo[12] + " " + codigo[13];
 
             lb_metododepago.Text = metodo_de_pago;
+
+
 
             //fitrar el array para ver cual esta vacio y filtrarlo para que solamte se agregen los que estan llenos
             var Filter_names = ticket_results.Where(n => n != null).ToArray();
