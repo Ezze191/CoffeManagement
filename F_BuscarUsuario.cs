@@ -70,6 +70,8 @@ namespace Proyecto_POO
                         if (result == DialogResult.Yes)
                         {
                             F_RegistarCliente registar = new F_RegistarCliente();
+                            registar.data_name = tb_nombre.Text;
+                            registar.data_apellido = tb_apellido.Text;
                             registar.Show();
                             this.Close();
                         }

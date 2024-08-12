@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace Proyecto_POO
 {
@@ -37,6 +38,7 @@ namespace Proyecto_POO
 
             F_BuscarUsuario V_BuscarUsuario = new F_BuscarUsuario();
             V_BuscarUsuario.Show();
+            this.Hide();
             
         }
 
@@ -56,6 +58,7 @@ namespace Proyecto_POO
         {
             F_RegistarCliente registrar = new F_RegistarCliente();
             registrar.Show();
+            this.Hide();
             
         }
 

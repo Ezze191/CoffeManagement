@@ -14,6 +14,9 @@ namespace Proyecto_POO
 {
     public partial class F_RegistarCliente : Form
     {
+        public string data_name { get; set; }
+       public  string data_apellido { get; set; }
+        
         public F_RegistarCliente()
         {
             InitializeComponent();
@@ -21,6 +24,8 @@ namespace Proyecto_POO
 
         private void F_RegistarCliente_Load(object sender, EventArgs e)
         {
+            tb_nombre.Text = data_name;
+            tb_apellido.Text = data_apellido;
 
         }
 
