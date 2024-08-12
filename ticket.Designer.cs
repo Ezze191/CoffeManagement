@@ -285,7 +285,7 @@
             // lb_metododepago
             // 
             this.lb_metododepago.AutoSize = true;
-            this.lb_metododepago.Location = new System.Drawing.Point(269, 146);
+            this.lb_metododepago.Location = new System.Drawing.Point(269, 148);
             this.lb_metododepago.Name = "lb_metododepago";
             this.lb_metododepago.Size = new System.Drawing.Size(42, 16);
             this.lb_metododepago.TabIndex = 23;
@@ -320,6 +320,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.listBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ticket";
