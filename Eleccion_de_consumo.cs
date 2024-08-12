@@ -37,7 +37,7 @@ namespace Proyecto_POO
         Cprecios precios = new Cprecios();
 
         Sumatorio sumatorio = new Sumatorio();
-
+        dinero_cambio cambio = new dinero_cambio();
         Sumatorio sumatorio_americano = new Sumatorio();
         Sumatorio sumatorio_capu = new Sumatorio();
         Sumatorio sumatorio_latte = new Sumatorio();
@@ -119,10 +119,14 @@ namespace Proyecto_POO
                 {
                     MessageBox.Show("NO HAY NADA PARA PAGAR");
                 }
-                else { 
-                ver_ticket.data_total = dinero_a_pagar.ToString();
-                ver_ticket.Show();
-                
+                else {
+                   
+                    
+                    ver_ticket.data_total = dinero_a_pagar.ToString();
+                    ver_ticket.Show();
+
+                    cambio.dinero_a_pagar = dinero_a_pagar;
+                    cambio.Show();
                 }
             }
             else if(dinero_a_pagar <= 0)
@@ -141,18 +145,20 @@ namespace Proyecto_POO
                 subir_datos.subir_cash(datanombre, dataapellido);
                 subir_datos.subir_veces(datanombre, dataapellido);
 
+               
                 ver_ticket.data_name = datanombre;
                 ver_ticket.data_apellido = dataapellido;
                 
-
+                
                 ver_ticket.data_total = dinero_a_pagar.ToString();
                 ver_ticket.Show();
 
-                
-                
-                
+                cambio.dinero_a_pagar = dinero_a_pagar;
+                cambio.Show();
 
-                
+
+
+
             }
         }
 

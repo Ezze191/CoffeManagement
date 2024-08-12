@@ -53,6 +53,12 @@
     <Compile Include="actualizarPrecio.cs" />
     <Compile Include="Conexion_BaseDatos.cs" />
     <Compile Include="Cprecios.cs" />
+    <Compile Include="dinero_cambio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dinero_cambio.Designer.cs">
+      <DependentUpon>dinero_cambio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Eleccion_de_consumo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     <Compile Include="VentanaAdmin.Designer.cs">
       <DependentUpon>VentanaAdmin.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="dinero_cambio.resx">
+      <DependentUpon>dinero_cambio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Eleccion_de_consumo.resx">
       <DependentUpon>Eleccion_de_consumo.cs</DependentUpon>
     </EmbeddedResource>
