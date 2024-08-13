@@ -131,6 +131,7 @@ namespace Proyecto_POO
 
                     cambio.dinero_a_pagar = dinero_a_pagar;
                     cambio.Show();
+                    this.Hide();
 
 
                 }
@@ -165,6 +166,7 @@ namespace Proyecto_POO
 
                 cambio.dinero_a_pagar = dinero_a_pagar;
                 cambio.Show();
+                this.Hide();
 
                 
 
@@ -366,6 +368,7 @@ namespace Proyecto_POO
 
                 ver_ticket.data_total = dinero_a_pagar.ToString();
                 ver_ticket.Show();
+                this.Hide();
 
                
 
@@ -382,6 +385,11 @@ namespace Proyecto_POO
             this.Hide();    
             F_HOME inicio = new F_HOME();
             inicio.Show();  
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
         }
     }
     }

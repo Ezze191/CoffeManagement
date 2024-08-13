@@ -119,6 +119,18 @@ namespace Proyecto_POO
         {
             this.Hide();
             MessageBox.Show("COMPRA REALIZADA CON EXITO");
+            F_HOME inicio = new F_HOME();
+            inicio.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_codigo_barras_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
