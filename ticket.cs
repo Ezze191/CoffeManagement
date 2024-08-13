@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.IO;
 
 namespace Proyecto_POO
 {
@@ -121,6 +124,8 @@ namespace Proyecto_POO
             MessageBox.Show("COMPRA REALIZADA CON EXITO");
             F_HOME inicio = new F_HOME();
             inicio.Show();
+            string rutaArchivo = "C:\\Users\\Ayala\\source\\repos\\Proyectp_POO\\pdfs";
+
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
